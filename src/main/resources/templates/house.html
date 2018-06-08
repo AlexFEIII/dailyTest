@@ -1,0 +1,1032 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="http://p5w1f51o8.bkt.clouddn.com/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/share.min.css">
+    <link rel="stylesheet" href="../fonts/font.css">
+    <link rel="stylesheet" href="../css/same.css">
+    <link rel="stylesheet" href="../css/special_new.css">
+    <link rel="stylesheet" href="../css/house.css">
+    <title>好奇心日报_好奇驱使你的世界_Qdaily</title>
+    <script src="../js/jQuery.js"></script>
+    <script src="../js/jquery.qrcode.js"></script>
+</head>
+
+<body>
+    <div id="box">
+        <div class="nav">
+            <div class="left">
+                <div class="div_a">
+                    <a id="logo_content" href="index.html" target="_blank">
+                        <img src="http://p5w1f51o8.bkt.clouddn.com/logo.png" id="logo">
+                    </a>
+                    <a id="logo_box" href="index.html" target="_blank">
+                        <img src="http://p5w1f51o8.bkt.clouddn.com/curious.jpg" id="logo_bottom">
+                    </a>
+                </div>
+                <ul id="item_left">
+                    <li>
+                        <a href="research.html" target="_blank">
+                            <span class="span_icon1">
+                                <i class="iconfont">&#xe64a;</i>
+                            </span>
+                            <p>好奇心研究所</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="column.html" target="_blank" style="color:#ffd000">
+                            <span class="span_icon2">
+                                <i class="iconfont">&#xe6f9;</i>
+                            </span>
+                            <p>栏目中心</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="middle">
+                <ul id="middle_item">
+                    <li>
+                        <a href="long_article.html" target="_blank">
+                            长文章
+                        </a>
+                    </li>
+                    <li>
+                        <a href="picture.html" target="_blank">
+                            10 个图
+                        </a>
+                    </li>
+                    <li>
+                        <a href="Top 15.html" target="_blank">
+                            Top 15
+                        </a>
+                    </li>
+                    <li>
+                        <a href="business.html" target="_blank">
+                            商业
+                        </a>
+                    </li>
+                    <li>
+                        <a href="magic.html" target="_blank">
+                            智能
+                        </a>
+                    </li>
+                    <li>
+                        <a href="design.html" target="_blank">
+                            设计
+                        </a>
+                    </li>
+                    <li>
+                        <a href="fashion.html" target="_blank">
+                            时尚
+                        </a>
+                    </li>
+                    <li>
+                        <a href="happiness.html" target="_blank">
+                            娱乐
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" id="last_icon">
+                            全部分类
+                            <i class="iconfont down">&#xe601;</i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="right">
+                <div class="app">
+                    <a href="app.html" id="app_a" target="_blank">
+                        APP
+                    </a>
+                </div>
+                <div class="icon_s">
+                    <a href="javascript:;" class="search">
+                        <i class="iconfont">&#xe6fe;</i>
+                    </a>
+                </div>
+                <div class="about_us">
+                    <span class="login">
+                        <a href="javascript:;" class="login_img">
+                            <img src="http://p5w1f51o8.bkt.clouddn.com/login.png">
+                        </a>
+                        <a href="javascript:;" class="login_img">
+                            登录
+                        </a>
+                    </span>
+                    <span>
+                        <a href="app.html" target="_blank">
+                            关于我们
+                        </a>
+                    </span>
+                    <span>
+                        <a href="http://weibo.com/qdaily" class="icon_a" target="_blank">
+                            <i class="iconfont">&#xe65a;</i>
+                        </a>
+                    </span>
+                    <span>
+                        <a href="javascript:;" class="icon_a">
+                            <i class="iconfont">&#xe69a;</i>
+                            <div class="weixin_box">
+                                <div id="QR_Code"></div>
+                                <p id="number">好奇心微信公众号</p>
+                            </div>
+                        </a>
+                    </span>
+                </div>
+            </div>
+            <div class="page_nav">
+                <ul id="page_ul">
+                    <li>
+                        <a href="long_article.html" target="_blank">
+                            <span>
+                                <i class="iconfont">&#xe61c;</i>
+                            </span>
+                            <p>
+                                长文章
+                            </p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="picture.html" target="_blank">
+                            <span>
+                                <i class="iconfont">&#xe61c;</i>
+                            </span>
+                            <p>
+                                10 个图
+                            </p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="Top 15.html" target="_blank">
+                            <span>
+                                <i class="iconfont">&#xe61c;</i>
+                            </span>
+                            <p>
+                                Top 15
+                            </p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="business.html" target="_blank">
+                            <span>
+                                <i class="iconfont">&#xe61c;</i>
+                            </span>
+                            <p>
+                                商业
+                            </p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="magic.html" target="_blank">
+                            <span>
+                                <i class="iconfont">&#xe61c;</i>
+                            </span>
+                            <p>
+                                智能
+                            </p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="design.html" target="_blank">
+                            <span>
+                                <i class="iconfont">&#xe61c;</i>
+                            </span>
+                            <p>
+                                设计
+                            </p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="fashion.html" target="_blank">
+                            <span>
+                                <i class="iconfont">&#xe61c;</i>
+                            </span>
+                            <p>
+                                时尚
+                            </p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="happiness.html" target="_blank">
+                            <span>
+                                <i class="iconfont">&#xe61c;</i>
+                            </span>
+                            <p>
+                                娱乐
+                            </p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="city.html" target="_blank">
+                            <span>
+                                <i class="iconfont">&#xe61c;</i>
+                            </span>
+                            <p>
+                                城市
+                            </p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="game.html" target="_blank">
+                            <span>
+                                <i class="iconfont">&#xe61c;</i>
+                            </span>
+                            <p>
+                                游戏
+                            </p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="banner_big">
+            <img src="http://p5w1f51o8.bkt.clouddn.com/house.jpg">
+            <div class="bottom_b_div">
+                <div class="center_div">
+                    <div class="top_center">
+                        <span>房子和我们的生活</span>
+                        <span class="login_img">
+                            <i class="iconfont">&#xe62a;</i>
+                        </span>
+                    </div>
+                    <div class="bottom_center">
+                        <p>我们从个人生活中关注度最高的“房子”入手，开始记录微观历史。</p>
+                        <div class="social-share" data-initialized="true">
+                            <a href="#" class="social-share-icon icon-wechat"></a>
+                            <a href="#" class="social-share-icon icon-weibo"></a>
+                            <a href="#" class="social-share-icon icon-tencent"></a>
+                            <a href="#" class="social-share-icon icon-qzone"></a>
+                            <a href="#" class="social-share-icon icon-douban"></a>
+                            <a href="#" class="social-share-icon icon-linkedin"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main_box">
+            <div class="out_div">
+                <div class="top_title">
+                    <div class="top_title_div">
+                        <p>本栏目由以下记者主持</p>
+                    </div>
+                    <div class="middle_title_div">
+                        <div class="circle_p">
+                            <img src="http://p5w1f51o8.bkt.clouddn.com/people_p.jpg">
+                        </div>
+                        <div class="container_p">
+                            <p>温欣语</p>
+                            <p>记者兼舞者，南加州大学神经系xinyu.wen@qdaily.com</p>
+                        </div>
+                    </div>
+                    <div class="bottom_title_div">
+                        <p>6116人订阅了本栏目</p>
+                    </div>
+                    <div class="same_line_long">
+                        <div class="same_circle">
+                            <img src="http://www.qdaily.com/images/missing_face.png">
+                        </div>
+                        <div class="same_circle">
+                            <img src="http://img.qdaily.com/face/face/20170714142034WhatKwDmTJXHr7Mv.png?imageMogr2/auto-orient/thumbnail/!80x80r/gravity/Center/crop/80x80/quality/85/format/jpg/ignore-error/1">
+                        </div>
+                        <div class="same_circle">
+                            <img src="http://img.qdaily.com/user/face/201804031248199rekns4WbH2VZTvI.jpg?imageMogr2/auto-orient/thumbnail/!80x80r/gravity/Center/crop/80x80/quality/85/format/jpg/ignore-error/1">
+                        </div>
+                        <div class="same_circle">
+                            <img src="http://www.qdaily.com/images/missing_face.png">
+                        </div>
+                        <div class="same_circle">
+                            <img src="http://img.qdaily.com/user/face/20180104225240TuBn3tPXKHyocSjG.jpg?imageMogr2/auto-orient/thumbnail/!80x80r/gravity/Center/crop/80x80/quality/85/format/jpg/ignore-error/1">
+                        </div>
+                        <div class="same_circle">
+                            <img src="http://img.qdaily.com/user/face/20180407095805lrEFRVO5pXm1qKdx.jpg?imageMogr2/auto-orient/thumbnail/!80x80r/gravity/Center/crop/80x80/quality/85/format/jpg/ignore-error/1">
+                        </div>
+                        <div class="same_circle">
+                            <img src="http://img.qdaily.com/user/face/20180330130353QO6nixtCF7l9bySq.jpg?imageMogr2/auto-orient/thumbnail/!80x80r/gravity/Center/crop/80x80/quality/85/format/jpg/ignore-error/1">
+                        </div>
+                        <div class="same_circle">
+                            <img src="http://img.qdaily.com/user/face/20180407011850VfwNu1j7a5yJYpHR.jpg?imageMogr2/auto-orient/thumbnail/!80x80r/gravity/Center/crop/80x80/quality/85/format/jpg/ignore-error/1">
+                        </div>
+                        <div class="same_circle">
+                            <img src="http://img.qdaily.com/face/face/20170714144125FN5ASiJXxW2RqUMl.png?imageMogr2/auto-orient/thumbnail/!80x80r/gravity/Center/crop/80x80/quality/85/format/jpg/ignore-error/1">
+                        </div>
+                        <div class="same_circle">
+                            <img src="http://img.qdaily.com/face/face/20170714142034WhatKwDmTJXHr7Mv.png?imageMogr2/auto-orient/thumbnail/!80x80r/gravity/Center/crop/80x80/quality/85/format/jpg/ignore-error/1">
+                        </div>
+                        <div class="same_circle">
+                            <img src="http://img.qdaily.com/user/face/20180406160749Fy0YupA8iB9GnzOQ.jpg?imageMogr2/auto-orient/thumbnail/!80x80r/gravity/Center/crop/80x80/quality/85/format/jpg/ignore-error/1">
+                        </div>
+                        <div class="same_circle">
+                            <img src="http://img.qdaily.com/user/face/201804061842572OWDBR5MrIAiCths.jpg?imageMogr2/auto-orient/thumbnail/!80x80r/gravity/Center/crop/80x80/quality/85/format/jpg/ignore-error/1">
+                        </div>
+                    </div>
+                </div>
+                <div class="max_box">
+                    <div class="same_good">
+                        <a href="javascript:;">
+                            <img src="http://img.qdaily.com/article/article_show/201802271334166fnywdTp1hiVLb4A.jpg?imageMogr2/auto-orient/thumbnail/!500x280r/gravity/Center/crop/500x280/quality/85/format/jpg/ignore-error/1">
+                            <p>
+                                <span class="icon_circle">
+                                    <i class="iconfont">&#xe61c;</i>
+                                </span>
+                                <span>
+                                    城市
+                                </span>
+                            </p>
+                            <div class="bottom_div_special">
+                                <div class="small_div_bottom">
+                                    <p>他打了 10 年工，还是没想明白打工者的生活何以至此 | 房子和我们的生活⑰</p>
+                                    <span>3月2日</span>
+                                    <div class="span_two">
+                                        <span>
+                                            <i class="iconfont">&#xe60f;</i>
+                                            162
+                                        </span>
+                                        <span>
+                                            <i class="iconfont">&#xe630;</i>
+                                            684
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="same_good">
+                        <a href="javascript:;">
+                            <img src="http://img.qdaily.com/article/article_show/20180222231516uhmije4scPOtkwz8.jpg?imageMogr2/auto-orient/thumbnail/!500x280r/gravity/Center/crop/500x280/quality/85/format/jpg/ignore-error/1">
+                            <p>
+                                <span class="icon_circle">
+                                    <i class="iconfont">&#xe61c;</i>
+                                </span>
+                                <span>
+                                    城市
+                                </span>
+                            </p>
+                            <div class="bottom_div_special">
+                                <div class="small_div_bottom">
+                                    <p>一个 1967 年生人的优裕生活，他赶上了好时候 | 房子和我们的生活⑯</p>
+                                    <span>2月23日</span>
+                                    <div class="span_two">
+                                        <span>
+                                            <i class="iconfont">&#xe60f;</i>
+                                            52
+                                        </span>
+                                        <span>
+                                            <i class="iconfont">&#xe630;</i>
+                                            468
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="same_good">
+                        <a href="javascript:;">
+                            <img src="http://img.qdaily.com/article/article_show/201801301250265YhPMCdBwXe8Qq6r.jpg?imageMogr2/auto-orient/thumbnail/!500x280r/gravity/Center/crop/500x280/quality/85/format/jpg/ignore-error/1">
+                            <p>
+                                <span class="icon_circle">
+                                    <i class="iconfont">&#xe61c;</i>
+                                </span>
+                                <span>
+                                    城市
+                                </span>
+                            </p>
+                            <div class="bottom_div_special">
+                                <div class="small_div_bottom">
+                                    <p>他被困在当年用金条换来的房子里，拆迁“谈了只是多事” | 房子和我们的生活⑮</p>
+                                    <span>1月30日</span>
+                                    <div class="span_two">
+                                        <span>
+                                            <i class="iconfont">&#xe60f;</i>
+                                            110
+                                        </span>
+                                        <span>
+                                            <i class="iconfont">&#xe630;</i>
+                                            367
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="same_good">
+                        <a href="javascript:;">
+                            <img src="http://img.qdaily.com/article/article_show/20180124041239QaBMHjC4xzSPtuW0.JPG?imageMogr2/auto-orient/thumbnail/!500x280r/gravity/Center/crop/500x280/quality/85/format/jpg/ignore-error/1">
+                            <p>
+                                <span class="icon_circle">
+                                    <i class="iconfont">&#xe61c;</i>
+                                </span>
+                                <span>
+                                    城市
+                                </span>
+                            </p>
+                            <div class="bottom_div_special">
+                                <div class="small_div_bottom">
+                                    <p>在自己的出生地长乐路，吴亮成了一个多余人 | 房子和我们的生活 ⑭</p>
+                                    <span>1月24日</span>
+                                    <div class="span_two">
+                                        <span>
+                                            <i class="iconfont">&#xe60f;</i>
+                                            75
+                                        </span>
+                                        <span>
+                                            <i class="iconfont">&#xe630;</i>
+                                            263
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="same_good">
+                        <a href="javascript:;">
+                            <img src="http://img.qdaily.com/article/article_show/20180109042804nWRY2qM0Uspof5ix.jpg?imageMogr2/auto-orient/thumbnail/!500x280r/gravity/Center/crop/500x280/quality/85/format/jpg/ignore-error/1">
+                            <p>
+                                <span class="icon_circle">
+                                    <i class="iconfont">&#xe61c;</i>
+                                </span>
+                                <span>
+                                    城市
+                                </span>
+                            </p>
+                            <div class="bottom_div_special">
+                                <div class="small_div_bottom">
+                                    <p>一个上海知青在马鞍山的 40 多年，国企构成了他生活的全部 | 房子和我们的生活 ⑬</p>
+                                    <span>1月9日</span>
+                                    <div class="span_two">
+                                        <span>
+                                            <i class="iconfont">&#xe60f;</i>
+                                            48
+                                        </span>
+                                        <span>
+                                            <i class="iconfont">&#xe630;</i>
+                                            300
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="same_good">
+                        <a href="javascript:;">
+                            <img src="http://img.qdaily.com/article/article_show/20171227105055jVeJi4tZBlMwpT69.jpg?imageMogr2/auto-orient/thumbnail/!500x280r/gravity/Center/crop/500x280/quality/85/format/jpg/ignore-error/1">
+                            <p>
+                                <span class="icon_circle">
+                                    <i class="iconfont">&#xe61c;</i>
+                                </span>
+                                <span>
+                                    城市
+                                </span>
+                            </p>
+                            <div class="bottom_div_special">
+                                <div class="small_div_bottom">
+                                    <p>1965 年出生在香港的吴君如，说往事都像是伤痛 | 房子和我们的生活⑫</p>
+                                    <span>2017年12月27日</span>
+                                    <div class="span_two">
+                                        <span>
+                                            <i class="iconfont">&#xe60f;</i>
+                                            62
+                                        </span>
+                                        <span>
+                                            <i class="iconfont">&#xe630;</i>
+                                            654
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="same_good">
+                        <a href="javascript:;">
+                            <img src="http://img.qdaily.com/article/article_show/201711171200202fuSAB9y6iULKnzQ.jpg?imageMogr2/auto-orient/thumbnail/!500x280r/gravity/Center/crop/500x280/quality/85/format/jpg/ignore-error/1">
+                            <p>
+                                <span class="icon_circle">
+                                    <i class="iconfont">&#xe61c;</i>
+                                </span>
+                                <span>
+                                    城市
+                                </span>
+                            </p>
+                            <div class="bottom_div_special">
+                                <div class="small_div_bottom">
+                                    <p>从上海到纽约，55 岁的他一直在逃离“那种生活” | 房子和我们的生活⑪</p>
+                                    <span>2017年11月23日</span>
+                                    <div class="span_two">
+                                        <span>
+                                            <i class="iconfont">&#xe60f;</i>
+                                            40
+                                        </span>
+                                        <span>
+                                            <i class="iconfont">&#xe630;</i>
+                                            453
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="same_good">
+                        <a href="javascript:;">
+                            <img src="http://img.qdaily.com/article/article_show/20171108212658B1sOUpdwKhXRE5cP.jpg?imageMogr2/auto-orient/thumbnail/!500x280r/gravity/Center/crop/500x280/quality/85/format/jpg/ignore-error/1">
+                            <p>
+                                <span class="icon_circle">
+                                    <i class="iconfont">&#xe61c;</i>
+                                </span>
+                                <span>
+                                    城市
+                                </span>
+                            </p>
+                            <div class="bottom_div_special">
+                                <div class="small_div_bottom">
+                                    <p>1954年出生，他是中国恢复高考后的第一届大学生 | 房子和我们的生活⑩</p>
+                                    <span>2017年11月9日</span>
+                                    <div class="span_two">
+                                        <span>
+                                            <i class="iconfont">&#xe60f;</i>
+                                            70
+                                        </span>
+                                        <span>
+                                            <i class="iconfont">&#xe630;</i>
+                                            533
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="same_good">
+                        <a href="javascript:;">
+                            <img src="http://img.qdaily.com/article/article_show/201710312056194pTzK6ebJhIaBE93.jpg?imageMogr2/auto-orient/thumbnail/!500x280r/gravity/Center/crop/500x280/quality/85/format/jpg/ignore-error/1">
+                            <p>
+                                <span class="icon_circle">
+                                    <i class="iconfont">&#xe61c;</i>
+                                </span>
+                                <span>
+                                    城市
+                                </span>
+                            </p>
+                            <div class="bottom_div_special">
+                                <div class="small_div_bottom">
+                                    <p>1980 年出生，他的生活“从斗志昂扬到意气全无” | 房子和我们的生活⑨</p>
+                                    <span>2017年11月1日</span>
+                                    <div class="span_two">
+                                        <span>
+                                            <i class="iconfont">&#xe60f;</i>
+                                            135
+                                        </span>
+                                        <span>
+                                            <i class="iconfont">&#xe630;</i>
+                                            730
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="same_good">
+                        <a href="javascript:;">
+                            <img src="http://img.qdaily.com/article/article_show/20171019172744NrL9QJSHZghF675M.jpg?imageMogr2/auto-orient/thumbnail/!500x280r/gravity/Center/crop/500x280/quality/85/format/jpg/ignore-error/1">
+                            <p>
+                                <span class="icon_circle">
+                                    <i class="iconfont">&#xe61c;</i>
+                                </span>
+                                <span>
+                                    城市
+                                </span>
+                            </p>
+                            <div class="bottom_div_special">
+                                <div class="small_div_bottom">
+                                    <p>一个 30 岁离开台湾的人，讲述自己如何逃离稳定的生活 | 房子和我们的生活⑧</p>
+                                    <span>2017年10月24日</span>
+                                    <div class="span_two">
+                                        <span>
+                                            <i class="iconfont">&#xe60f;</i>
+                                            97
+                                        </span>
+                                        <span>
+                                            <i class="iconfont">&#xe630;</i>
+                                            690
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="same_good">
+                        <a href="javascript:;">
+                            <img src="http://img.qdaily.com/article/article_show/20171011184311ptjZhysW5cY8l2Bm.jpg?imageMogr2/auto-orient/thumbnail/!500x280r/gravity/Center/crop/500x280/quality/85/format/jpg/ignore-error/1">
+                            <p>
+                                <span class="icon_circle">
+                                    <i class="iconfont">&#xe61c;</i>
+                                </span>
+                                <span>
+                                    城市
+                                </span>
+                            </p>
+                            <div class="bottom_div_special">
+                                <div class="small_div_bottom">
+                                    <p>他生于1969年，赶上了外企的好时候，应对方式就是“读书”| 房子和我们的生活⑦</p>
+                                    <span>2017年10月12日</span>
+                                    <div class="span_two">
+                                        <span>
+                                            <i class="iconfont">&#xe60f;</i>
+                                            42
+                                        </span>
+                                        <span>
+                                            <i class="iconfont">&#xe630;</i>
+                                            424
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="same_good">
+                        <a href="javascript:;">
+                            <img src="http://img.qdaily.com/article/article_show/201709261437530JGIqWdUEjnl9CzD.jpg?imageMogr2/auto-orient/thumbnail/!500x280r/gravity/Center/crop/500x280/quality/85/format/jpg/ignore-error/1">
+                            <p>
+                                <span class="icon_circle">
+                                    <i class="iconfont">&#xe61c;</i>
+                                </span>
+                                <span>
+                                    城市
+                                </span>
+                            </p>
+                            <div class="bottom_div_special">
+                                <div class="small_div_bottom">
+                                    <p>油田子弟侯丽，生于 1973 年 | 房子和我们的生活⑥</p>
+                                    <span>2017年9月26日</span>
+                                    <div class="span_two">
+                                        <span>
+                                            <i class="iconfont">&#xe60f;</i>
+                                            29
+                                        </span>
+                                        <span>
+                                            <i class="iconfont">&#xe630;</i>
+                                            249
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="same_good">
+                        <a href="javascript:;">
+                            <img src="http://img.qdaily.com/article/article_show/20170920230137XMCouyFZa95zQApx.jpg?imageMogr2/auto-orient/thumbnail/!500x280r/gravity/Center/crop/500x280/quality/85/format/jpg/ignore-error/1">
+                            <p>
+                                <span class="icon_circle">
+                                    <i class="iconfont">&#xe61c;</i>
+                                </span>
+                                <span>
+                                    城市
+                                </span>
+                            </p>
+                            <div class="bottom_div_special">
+                                <div class="small_div_bottom">
+                                    <p>从 1968 年出生到现在，“我们长大的过程，是被一点点颠覆的过程” | 房子和我们的生活⑤</p>
+                                    <span>2017年9月21日</span>
+                                    <div class="span_two">
+                                        <span>
+                                            <i class="iconfont">&#xe60f;</i>
+                                            52
+                                        </span>
+                                        <span>
+                                            <i class="iconfont">&#xe630;</i>
+                                            808
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="same_good">
+                        <a href="javascript:;">
+                            <img src="http://img.qdaily.com/article/article_show/20170909150127swQI630XP1pS8nj7.jpg?imageMogr2/auto-orient/thumbnail/!500x280r/gravity/Center/crop/500x280/quality/85/format/jpg/ignore-error/1">
+                            <p>
+                                <span class="icon_circle">
+                                    <i class="iconfont">&#xe61c;</i>
+                                </span>
+                                <span>
+                                    城市
+                                </span>
+                            </p>
+                            <div class="bottom_div_special">
+                                <div class="small_div_bottom">
+                                    <p>1984年，他成了全中国第一个建成的工人新村里的第3代居民 | 房子和我们的生活④</p>
+                                    <span>2017年9月12日</span>
+                                    <div class="span_two">
+                                        <span>
+                                            <i class="iconfont">&#xe60f;</i>
+                                            22
+                                        </span>
+                                        <span>
+                                            <i class="iconfont">&#xe630;</i>
+                                            248
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="same_good">
+                        <a href="javascript:;">
+                            <img src="http://img.qdaily.com/article/article_show/20170906091941JBc81xHFD6vo9Y3A.jpg?imageMogr2/auto-orient/thumbnail/!500x280r/gravity/Center/crop/500x280/quality/85/format/jpg/ignore-error/1">
+                            <p>
+                                <span class="icon_circle">
+                                    <i class="iconfont">&#xe61c;</i>
+                                </span>
+                                <span>
+                                    城市
+                                </span>
+                            </p>
+                            <div class="bottom_div_special">
+                                <div class="small_div_bottom">
+                                    <p>“1992 年 6 月 9 号来的，25 年了，一直在上海打工、成家” | 房子和我们的生活③</p>
+                                    <span>2017年9月6日</span>
+                                    <div class="span_two">
+                                        <span>
+                                            <i class="iconfont">&#xe60f;</i>
+                                            34
+                                        </span>
+                                        <span>
+                                            <i class="iconfont">&#xe630;</i>
+                                            393
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="same_good">
+                        <a href="javascript:;">
+                            <img src="http://img.qdaily.com/article/article_show/201708290712335IoiTlfCsERdjzUF.jpg?imageMogr2/auto-orient/thumbnail/!500x280r/gravity/Center/crop/500x280/quality/85/format/jpg/ignore-error/1">
+                            <p>
+                                <span class="icon_circle">
+                                    <i class="iconfont">&#xe61c;</i>
+                                </span>
+                                <span>
+                                    城市
+                                </span>
+                            </p>
+                            <div class="bottom_div_special">
+                                <div class="small_div_bottom">
+                                    <p>“那时我觉得房子是透亮的，每个人都是透亮的” | 房子和我们的生活②</p>
+                                    <span>2017年8月29日</span>
+                                    <div class="span_two">
+                                        <span>
+                                            <i class="iconfont">&#xe60f;</i>
+                                            18
+                                        </span>
+                                        <span>
+                                            <i class="iconfont">&#xe630;</i>
+                                            401
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="same_good">
+                        <a href="javascript:;">
+                            <img src="http://img.qdaily.com/article/article_show/20170815144851oevpmhxzajSF02Ry.JPG?imageMogr2/auto-orient/thumbnail/!500x280r/gravity/Center/crop/500x280/quality/85/format/jpg/ignore-error/1">
+                            <p>
+                                <span class="icon_circle">
+                                    <i class="iconfont">&#xe61c;</i>
+                                </span>
+                                <span>
+                                    城市
+                                </span>
+                            </p>
+                            <div class="bottom_div_special">
+                                <div class="small_div_bottom">
+                                    <p>“我们就是一步步靠自己，从石库门，到新公房，到现在大的房子” | 房子和我们的生活①</p>
+                                    <span>2017年8月24日</span>
+                                    <div class="span_two">
+                                        <span>
+                                            <i class="iconfont">&#xe60f;</i>
+                                            39
+                                        </span>
+                                        <span>
+                                            <i class="iconfont">&#xe630;</i>
+                                            602
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="most_div">
+                    <p>没有更多啦</p>
+                </div>
+            </div>
+        </div>
+        <div class="same_bottom">
+            <div class="s_b_top">
+                <div class="many_ul">
+                    <ul>
+                        <li>
+                            <a href="index.html" target="_blank">
+                                首页
+                            </a>
+                        </li>
+                        <li>
+                            <a href="long_article.html" target="_blank">
+                                长文章
+                            </a>
+                        </li>
+                        <li>
+                            <a href="Top 15.html" target="_blank">
+                                TOP 15
+                            </a>
+                        </li>
+                        <li>
+                            <a href="picture.html" target="_blank">
+                                10 个图
+                            </a>
+                        </li>
+                        <li>
+                            <a href="research.html" target="_blank">
+                                好奇心研究所
+                            </a>
+                        </li>
+                        <li>
+                            <a href="column.html" target="_blank">
+                                100个有想法的人
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                Medium
+                            </a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="big_company.html" target="_blank">
+                                大公司头条
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                Q Business
+                            </a>
+                        </li>
+                        <li>
+                            <a href="column.html" target="_blank">
+                                今日应用
+                            </a>
+                        </li>
+                        <li>
+                            <a href="column.html" target="_blank">
+                                这世界
+                            </a>
+                        </li>
+                        <li>
+                            <a href="best_on_the_web.html" target="_blank">
+                                Best on the web
+                            </a>
+                        </li>
+                        <li>
+                            <a href="business.html" target="_blank">
+                                商业
+                            </a>
+                        </li>
+                        <li>
+                            <a href="magic.html" target="_blank">
+                                智能
+                            </a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="design.html" target="_blank">
+                                设计
+                            </a>
+                        </li>
+                        <li>
+                            <a href="fashion.html" target="_blank">
+                                时尚
+                            </a>
+                        </li>
+                        <li>
+                            <a href="happiness.html" target="_blank">
+                                娱乐
+                            </a>
+                        </li>
+                        <li>
+                            <a href="city.html" target="_blank">
+                                城市
+                            </a>
+                        </li>
+                        <li>
+                            <a href="game.html" target="_blank">
+                                游戏
+                            </a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="app.html" target="_blank">
+                                下载APP
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" class="login_img">
+                                登录 / 注册
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                订阅
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://weibo.com/qdaily" target="_blank">
+                                微博
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" class="show_a">
+                                微信
+                                <div class="wei_xin_bottom">
+                                    <div id="weixin_code"></div>
+                                    <p class="code_word">好奇心微信公众号</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="use_ agreement.html" target="_blank">
+                                用户协议
+                            </a>
+                        </li>
+                        <li>
+                            <a href="use_ agreement.html#privacy" target="_blank">
+                                隐私政策
+                            </a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="app.html" target="_blank">
+                                关于好奇心
+                            </a>
+                        </li>
+                        <li>
+                            <a href="app.html" target="_blank">
+                                联系我们
+                            </a>
+                        </li>
+                        <li>
+                            <a href="app.html" target="_blank">
+                                工作机会
+                            </a>
+                        </li>
+                        <li>
+                            <a href="use_ agreement.html#copyright" target="_blank">
+                                版权声明
+                            </a>
+                        </li>
+                    </ul>
+                    <form action="/searches" target="_blank" class="search_form">
+                        <input type="text">
+                        <span>
+                            <i class="iconfont">&#xe6fe;</i>
+                        </span>
+                    </form>
+                </div>
+            </div>
+            <div class="s_b_bottom">
+                <div class="power_right">
+                    <div class="right_img">
+                        <img src="http://p5w1f51o8.bkt.clouddn.com/logo.png">
+                    </div>
+                    <div class="right_word">
+                        <p>2014 北京酷睿奥思科技发展有限公司</p>
+                        <p>京ICP备14027177号-1</p>
+                        <span>
+                            <img src="http://p5w1f51o8.bkt.clouddn.com/Police.png">
+                        </span>
+                        <p>京公网安备 11010502030071号</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../js/social-share.min.js"></script>
+    <script src="../js/same.js"></script>
+    <script>
+        //配置share.js的参数
+        socialShare('.social-share', {
+            title: '《房子和我们的生活》，来自@好奇心日报',
+            image: 'http://p5w1f51o8.bkt.clouddn.com/house.jpg',
+            url: 'http://www.qdaily.com/special_columns/56.html',
+            description: '《房子和我们的生活》，来自@好奇心日报',
+        });
+    </script>
+</body>
+
+</html>

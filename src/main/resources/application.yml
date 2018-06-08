@@ -1,0 +1,28 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/daily
+    username: root
+    password: ENC(hbvUIxTZtPcxhFumEG1FopeJWjDPYxIqRBbBSAA2piQ=)
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  http:
+    multipart:
+      max-file-size: 2MB
+      max-request-size: 20MB
+  thymeleaf:
+    mode: LEGACYHTML5
+  devtools:
+    restart:
+      enabled: true
+      additional-paths: src/main/java,src/main/resources/static
+server:
+  port: 80
+jasypt:
+  encryptor:
+    password: 123456
+security:
+  basic:
+    enabled: false

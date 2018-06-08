@@ -1,0 +1,160 @@
+.main_box {
+    width: 100%;
+    padding-top: 90px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 40px;
+}
+
+.out_div {
+    width: 1010px;
+    overflow: hidden;
+}
+
+.max_box {
+    width: 1020px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    position: relative;
+    left: -10px;
+    top: -10px;
+}
+
+.same_good {
+    width: 500px;
+    height: 280px;
+    display: flex;
+    justify-content: center;
+    background: firebrick;
+    margin-top: 10px;
+    margin-left: 10px;
+    position: relative;
+}
+
+.same_good p {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.same_good .icon_circle {
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #363636;
+}
+
+.same_good span:nth-of-type(2) {
+    padding-left: 10px;
+    color: #fff;
+    font-size: 12px;
+}
+
+.same_good img {
+    transition: all 1s;
+}
+
+.same_good a {
+    overflow: hidden;
+}
+
+.same_good a:hover img {
+    transform: scale(1.05);
+}
+
+.bottom_div_special {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 170px;
+}
+
+.bottom_div_special::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, rgba(0, 0, 0, .6), transparent);
+    content: '';
+}
+
+.small_div_bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: calc(100% - 30px);
+    height: 80px;
+    padding: 0 15px 20px 15px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.small_div_bottom p {
+    width: calc(100% - 15px);
+    color: #fff;
+    position: relative;
+    left: 0;
+    font-size: 20px;
+}
+
+.small_div_bottom span {
+    display: flex;
+    color: #aaa;
+    font-size: 12px;
+    padding-top: 15px;
+    height: 15px;
+}
+
+.span_two {
+    display: flex;
+}
+
+.span_two span:nth-of-type(2) {
+    color: #ccc;
+}
+
+.most_div {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: -10px;
+}
+
+.most_div p {
+    font-size: 18px;
+    color: #bbb;
+    text-align: center;
+    position: relative;
+    display: inline-block;
+}
+
+.most_div p::after,
+.most_div p::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -60px;
+    width: 40px;
+    height: 1px;
+    background: #bbb;
+    overflow: hidden;
+}
+
+.most_div p::before {
+    right: inherit;
+    left: -60px;
+}

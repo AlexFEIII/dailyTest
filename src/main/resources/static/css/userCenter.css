@@ -1,0 +1,288 @@
+.user_center_banner {
+    width: 1010px;
+    position: relative;
+}
+
+.user_center_banner img {
+    width: 100%;
+    display: block;
+}
+
+.user_center_banner::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .7);
+}
+
+.setUp {
+    width: 1010px;
+    height: 130px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.setUp .a_contain {
+    width: 320px;
+    height: 49px;
+    position: relative;
+}
+
+.setUp a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 140px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #0f1419;
+    font-size: 21px;
+    border-bottom: 5px solid #ffc81f;
+}
+
+.setUp a:nth-of-type(2) {
+    left: inherit;
+    right: 0;
+    border-bottom: 5px solid transparent;
+}
+
+.five_point {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+.five_point .login_img {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -45%);
+}
+
+.five_point p {
+    color: #848484;
+    font-size: 14px;
+    text-align: center;
+}
+
+.five_point p a {
+    color: #fff;
+    margin: 0 5px;
+    display: inline-block;
+    position: relative;
+    top: 5px;
+    border-bottom: 1px solid #ffc81f;
+}
+
+.five_point img {
+    width: 100px;
+}
+
+.name_user {
+    position: absolute;
+    bottom: -17px;
+    z-index: 10;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 12px;
+    padding: 10px 12px;
+    font-weight: 700;
+    font-size: 20px;
+    color: #000;
+    background: #ffc81f;
+    line-height: 14px;
+}
+
+.information {
+    width: 1010px;
+    overflow: hidden;
+}
+
+.information ul {
+    width: 200%;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.information li {
+    width: 50%;
+    float: left;
+}
+
+.all_contain {
+    padding-left: 50px;
+    padding-top: 55px;
+    height: 445px;
+    background: #fff;
+    margin-top: 10px;
+}
+
+.z_t {
+    width: 305px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.z_t p {
+    cursor: default;
+}
+
+.z_t img {
+    width: 60px;
+    cursor: pointer;
+}
+
+.z_t label {
+    width: 110px;
+    height: 40px;
+    background: #ffc81f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 16px;
+    color: #fff;
+}
+
+.z_t input {
+    display: none;
+}
+
+.text {
+    font-size: 18px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    padding-left: 40px;
+}
+
+.text div {
+    display: flex;
+    align-items: center;
+}
+
+.text textarea {
+    resize: none;
+    outline: none;
+    width: 789px;
+    height: 60px;
+    border: none;
+    border: 1px solid gray;
+    padding: 10px 12px;
+    font-size: 15px;
+    line-height: 20px;
+}
+
+.text input {
+    border: none;
+    outline: none;
+    font-size: 15px;
+    border: 1px solid gray;
+    padding: 8px 12px;
+    width: 294px;
+}
+
+.text p {
+    padding-right: 25px;
+}
+
+.text p:nth-of-type(2) {
+    padding-left: 94px;
+}
+
+.text input::-webkit-input-placeholder {
+    color: #bbb;
+}
+
+.text input:-ms-input-placeholder {
+    color: #bbb;
+}
+
+.text input::-moz-placeholder {
+    color: #363636;
+}
+
+.text textarea::-webkit-input-placeholder {
+    color: #bbb;
+}
+
+.text textarea:-ms-input-placeholder {
+    color: #bbb;
+}
+
+.text textarea::-moz-placeholder {
+    color: #363636;
+}
+
+.text_area {
+    margin-top: 40px;
+    position: relative;
+}
+
+.text_area p {
+    position: relative;
+    top: -30px;
+}
+
+.text_area .t_span {
+    position: absolute;
+    right: 20px;
+    bottom: 12px;
+    color: #bbb;
+    font-size: 15px;
+    opacity: 1;
+}
+
+.text_area .t_span:nth-of-type(2){
+    color: #fa636e;
+    opacity: 0;
+}
+
+#Btn_sub {
+    display: none;
+}
+
+.submit_b {
+    padding-top: 40px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.submit_b div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 32px;
+}
+
+.submit_b div a {
+    color: #0f1419;
+    font-size: 14px;
+    padding-bottom: 4px;
+    border-bottom: 1px solid #ffc81f;
+}
+
+.submit_b label {
+    width: 240px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background: #ffc81f;
+    font-size: 24px;
+    cursor: pointer;
+}

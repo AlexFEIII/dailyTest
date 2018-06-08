@@ -1,0 +1,1333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <link rel="shortcut icon" href="http://p5w1f51o8.bkt.clouddn.com/favicon.ico" type="image/x-icon"/>
+    <link rel="stylesheet" href="css/share.min.css"/>
+    <link rel="stylesheet" href="fonts/font.css"/>
+    <link rel="stylesheet" href="css/same.css"/>
+    <link rel="stylesheet" href="css/app.css"/>
+    <title>好奇心日报_好奇驱使你的世界_Qdaily</title>
+    <script src="js/jQuery.js"></script>
+    <script src="js/jquery.qrcode.js"></script>
+</head>
+
+<body>
+    <div id="box">
+        <div class="nav">
+            <div class="left">
+                <div class="div_a">
+                    <a href="index.html" id="logo_content" target="_blank">
+                        <img src="http://p5w1f51o8.bkt.clouddn.com/logo.png" id="logo">
+                    </a>
+                    <a href="index.html" id="logo_box" target="_blank">
+                        <img src="http://p5w1f51o8.bkt.clouddn.com/curious.jpg" id="logo_bottom">
+                    </a>
+                </div>
+                <ul id="item_left">
+                    <li>
+                        <a href="column.html" target="_blank">
+                            <span class="span_icon1">
+                                <i class="iconfont">&#xe64a;</i>
+                            </span>
+                            <p>好奇心研究所</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="column.html" target="_blank">
+                            <span class="span_icon2">
+                                <i class="iconfont">&#xe6f9;</i>
+                            </span>
+                            <p>栏目中心</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="middle">
+                <ul id="middle_item">
+                    <li>
+                        <a href="long_article.html" target="_blank">
+                            长文章
+                        </a>
+                    </li>
+                    <li>
+                        <a href="picture.html" target="_blank">
+                            10 个图
+                        </a>
+                    </li>
+                    <li>
+                        <a href="Top 15.html" target="_blank">
+                            Top 15
+                        </a>
+                    </li>
+                    <li>
+                        <a href="business.html" target="_blank">
+                            商业
+                        </a>
+                    </li>
+                    <li>
+                        <a href="magic.html" target="_blank">
+                            智能
+                        </a>
+                    </li>
+                    <li>
+                        <a href="design.html" target="_blank">
+                            设计
+                        </a>
+                    </li>
+                    <li>
+                        <a href="fashion.html" target="_blank">
+                            时尚
+                        </a>
+                    </li>
+                    <li>
+                        <a href="happiness.html" target="_blank">
+                            娱乐
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" id="last_icon">
+                            全部分类
+                            <i class="iconfont down">&#xe601;</i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="right">
+                <div class="app">
+                    <a href="app.html" id="app_a">
+                        APP
+                    </a>
+                </div>
+                <div class="icon_s">
+                    <a href="javascript:;" class="search">
+                        <i class="iconfont">&#xe6fe;</i>
+                    </a>
+                </div>
+                <div class="about_us">
+                    <span class="login">
+                        <a href="javascript:;" class="login_img">
+                            <img src="http://p5w1f51o8.bkt.clouddn.com/login.png">
+                        </a>
+                        <a href="javascript:;" class="login_img">
+                            登录
+                        </a>
+                    </span>
+                    <span>
+                        <a href="app.html">
+                            关于我们
+                        </a>
+                    </span>
+                    <span>
+                        <a href="http://weibo.com/qdaily" class="icon_a" target="_blank">
+                            <i class="iconfont">&#xe65a;</i>
+                        </a>
+                    </span>
+                    <span>
+                        <a href="javascript:;" class="icon_a">
+                            <i class="iconfont">&#xe69a;</i>
+                            <div class="weixin_box">
+                                <div id="QR_Code"></div>
+                                <p id="number">好奇心微信公众号</p>
+                            </div>
+                        </a>
+                    </span>
+                </div>
+            </div>
+            <div class="page_nav">
+                <ul id="page_ul">
+                    <li>
+                        <a href="long_article.html" target="_blank">
+                            <span>
+                                <i class="iconfont">&#xe61c;</i>
+                            </span>
+                            <p>
+                                长文章
+                            </p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="picture.html" target="_blank">
+                            <span>
+                                <i class="iconfont">&#xe61c;</i>
+                            </span>
+                            <p>
+                                10 个图
+                            </p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="Top 15.html" target="_blank">
+                            <span>
+                                <i class="iconfont">&#xe61c;</i>
+                            </span>
+                            <p>
+                                Top 15
+                            </p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="business.html" target="_blank">
+                            <span>
+                                <i class="iconfont">&#xe61c;</i>
+                            </span>
+                            <p>
+                                商业
+                            </p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="magic.html" target="_blank">
+                            <span>
+                                <i class="iconfont">&#xe61c;</i>
+                            </span>
+                            <p>
+                                智能
+                            </p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="design.html" target="_blank">
+                            <span>
+                                <i class="iconfont">&#xe61c;</i>
+                            </span>
+                            <p>
+                                设计
+                            </p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="fashion.html" target="_blank">
+                            <span>
+                                <i class="iconfont">&#xe61c;</i>
+                            </span>
+                            <p>
+                                时尚
+                            </p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="happiness.html" target="_blank">
+                            <span>
+                                <i class="iconfont">&#xe61c;</i>
+                            </span>
+                            <p>
+                                娱乐
+                            </p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="city.html" target="_blank">
+                            <span>
+                                <i class="iconfont">&#xe61c;</i>
+                            </span>
+                            <p>
+                                城市
+                            </p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="game.html" target="_blank">
+                            <span>
+                                <i class="iconfont">&#xe61c;</i>
+                            </span>
+                            <p>
+                                游戏
+                            </p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="main_body">
+            <div class="w_box">
+                <div class="max_banner">
+                    <img src="http://p5w1f51o8.bkt.clouddn.com/max_banner.jpg">
+                    <div class="title_word">
+                        <p>好奇心日报</p>
+                        <p>每个时代都有最好的媒体</p>
+                    </div>
+                    <div class="left_b_w">
+                        <p>有种 有料 有信息量 </p>
+                        <p>还是原创</p>
+                        <p>颜值最高的</p>
+                        <p>新闻阅读神器</p>
+                        <div class="social-share" data-initialized="true">
+                            <a href="javascript:;" class="social-share-icon icon-weibo" rel="nofollow"></a>
+                            <a href="javascript:;" class="social-share-icon icon-tencent" rel="nofollow"></a>
+                            <a href="javascript:;" class="social-share-icon icon-qzone" rel="nofollow"></a>
+                            <a href="javascript:;" class="social-share-icon icon-douban" rel="nofollow"></a>
+                            <a href="javascript:;" class="social-share-icon icon-linkedin" rel="nofollow"></a>
+                        </div>
+                    </div>
+                    <div class="right_b_w">
+                        <p>有人颠覆世界</p>
+                        <p>我们在记录</p>
+                        <p>吐槽生活</p>
+                        <p>我们是一伙儿的！</p>
+                        <div class="down_load">
+                            <a href="javascript:;" class="show_btn">
+                                <i class="iconfont">&#xe68c;</i>
+                                iOS下载
+                                <div class="q_code"></div>
+                            </a>
+                            <a href="javascript:;" class="show_btn">
+                                <i class="iconfont">&#xe64e;</i>
+                                Android下载
+                                <div class="q_code"></div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="s_ul">
+                    <ul id="b_nav">
+                        <li>
+                            <a href="javascript:;" class="active">
+                                关于好奇心
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                联系我们
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                工作机会
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="switch">
+                    <ul id="special_nav" style="height:1053px">
+                        <li>
+                            <div class="s_top">
+                                <p>之所以叫「好奇心日报」，是因为我们认为好奇心是人类最美好的品质之一，我们筛选最有价值的信息，你能在这里看到全球最有想法、最值得关注的各界动态，以及它们背后的故事。祝愉快！</p>
+                            </div>
+                            <div class="s_middle">
+                                <div class="article">
+                                    <span>
+                                        <i class="iconfont">&#xe643;</i>
+                                    </span>
+                                    <span>长文章</span>
+                                    <p>
+                                        记录商业、新闻和生活方式
+                                    </p>
+                                </div>
+                                <div class="top_15">
+                                    <span>
+                                        <i class="iconfont">&#xe638;</i>
+                                    </span>
+                                    <span>TOP15</span>
+                                    <p>
+                                        影响你的生活，可能还改变了世界的最重要的生活方式类公司
+                                    </p>
+                                </div>
+                                <div class="char">
+                                    <span>
+                                        <i class="iconfont">&#xe679;</i>
+                                    </span>
+                                    <span>10个图</span>
+                                    <p>
+                                        洞悉数字背后的商业秘密
+                                    </p>
+                                </div>
+                                <div class="study">
+                                    <span>
+                                        <i class="iconfont">&#xe64a;</i>
+                                    </span>
+                                    <span>好奇心研究所</span>
+                                    <p>
+                                        为你的美好生活投票
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="s_bottom">
+                                <div class="first_div">
+                                    <div>
+                                        <span class="icon_span">
+                                            <i class="iconfont">&#xe6c8;</i>
+                                        </span>
+                                        <span>商业</span>
+                                    </div>
+                                    <div>
+                                        <p>生意，创业，竞争，用户关于商业你应该了解的最有趣的那一部分</p>
+                                    </div>
+                                </div>
+                                <div class="first_div">
+                                    <div>
+                                        <span class="icon_span">
+                                            <i class="iconfont">&#xe6c8;</i>
+                                        </span>
+                                        <span>娱乐</span>
+                                    </div>
+                                    <div>
+                                        <p>有关电影、电视和其它所有娱乐，让我们的生活浅薄而热烈的那一部分</p>
+                                    </div>
+                                </div>
+                                <div class="first_div">
+                                    <div>
+                                        <span class="icon_span">
+                                            <i class="iconfont">&#xe6c8;</i>
+                                        </span>
+                                        <span>设计</span>
+                                    </div>
+                                    <div>
+                                        <p>正当好时，既有想象力，又有爆发力</p>
+                                    </div>
+                                </div>
+                                <div class="first_div">
+                                    <div>
+                                        <span class="icon_span">
+                                            <i class="iconfont">&#xe6c8;</i>
+                                        </span>
+                                        <span>智能</span>
+                                    </div>
+                                    <div>
+                                        <p>创造力集聚地，生活变化的引擎</p>
+                                    </div>
+                                </div>
+                                <div class="first_div">
+                                    <div>
+                                        <span class="icon_span">
+                                            <i class="iconfont">&#xe6c8;</i>
+                                        </span>
+                                        <span>城市</span>
+                                    </div>
+                                    <div>
+                                        <p>我们在这里</p>
+                                    </div>
+                                </div>
+                                <div class="first_div">
+                                    <div>
+                                        <span class="icon_span">
+                                            <i class="iconfont">&#xe6c8;</i>
+                                        </span>
+                                        <span>设计词典</span>
+                                    </div>
+                                    <div>
+                                        <p>李如一的真知灼见</p>
+                                    </div>
+                                </div>
+                                <div class="first_div">
+                                    <div>
+                                        <span class="icon_span">
+                                            <i class="iconfont">&#xe6c8;</i>
+                                        </span>
+                                        <span>万物简史</span>
+                                    </div>
+                                    <div>
+                                        <p>世界如何走到全球化的今天</p>
+                                    </div>
+                                </div>
+                                <div class="first_div">
+                                    <div>
+                                        <span class="icon_span">
+                                            <i class="iconfont">&#xe6c8;</i>
+                                        </span>
+                                        <span>这个设计了不起</span>
+                                    </div>
+                                    <div>
+                                        <p>总能找到好看的东西</p>
+                                    </div>
+                                </div>
+                                <div class="first_div">
+                                    <div>
+                                        <span class="icon_span">
+                                            <i class="iconfont">&#xe6c8;</i>
+                                        </span>
+                                        <span>今日应用</span>
+                                    </div>
+                                    <div>
+                                        <p>你的时间总是被这些东西占去了</p>
+                                    </div>
+                                </div>
+                                <div class="first_div">
+                                    <div>
+                                        <span class="icon_span">
+                                            <i class="iconfont">&#xe6c8;</i>
+                                        </span>
+                                        <span>时尚</span>
+                                    </div>
+                                    <div>
+                                        <p>当潮流被看成一个产业</p>
+                                    </div>
+                                </div>
+                                <div class="first_div">
+                                    <div>
+                                        <span class="icon_span">
+                                            <i class="iconfont">&#xe6c8;</i>
+                                        </span>
+                                        <span>这世界</span>
+                                    </div>
+                                    <div>
+                                        <p>神秘的孙若空打开了这世界的一角</p>
+                                    </div>
+                                </div>
+                                <div class="first_div">
+                                    <div>
+                                        <span class="icon_span">
+                                            <i class="iconfont">&#xe6c8;</i>
+                                        </span>
+                                        <span>日本语</span>
+                                    </div>
+                                    <div>
+                                        <p>带你看年轻的隐秘角落</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="s_top next_top">
+                                <div>
+                                    <p>关注微信&微博</p>
+                                </div>
+                                <div>
+                                    <p>
+                                        商务合作&广告刊例
+                                    </p>
+                                </div>
+                                <div>
+                                    <p>市场合作&资源置换</p>
+                                </div>
+                                <div>
+                                    <p>简历投递&其他事项</p>
+                                </div>
+                                <div>
+                                    <span>
+                                        <i class="iconfont">&#xe69a;</i>
+                                    </span>
+                                    <span>ID:qdailycom</span>
+                                </div>
+                                <div>
+                                    <span>
+                                        <i class="iconfont">&#xe748;</i>
+                                    </span>
+                                    <a href="javascript:;">
+                                        AD@qdaily.com
+                                    </a>
+                                </div>
+                                <div>
+                                    <span>
+                                        <i class="iconfont">&#xe748;</i>
+                                    </span>
+                                    <a href="javascript:;">
+                                        biz@qdaily.com
+                                    </a>
+                                </div>
+                                <div>
+                                    <span>
+                                        <i class="iconfont">&#xe748;</i>
+                                    </span>
+                                    <span>info@qdaily.com</span>
+                                </div>
+                                <div>
+                                    <span>
+                                        <i class="iconfont">&#xe65a;</i>
+                                    </span>
+                                    <span>@好奇心日报</span>
+                                </div>
+                                <div>
+                                    <span>
+                                        <i class="iconfont">&#xe62c;</i>
+                                    </span>
+                                    <span>021-64330072</span>
+                                </div>
+                                <div>
+                                    <span>
+                                        <i class="iconfont">&#xe62c;</i>
+                                    </span>
+                                    <span>021-64330072</span>
+                                </div>
+                            </div>
+                            <div class="member">
+                                <div class="m_c">成员介绍</div>
+                                <div class="same_size size_1">
+                                    <div>
+                                        <span>
+                                            <img src="http://p5w1f51o8.bkt.clouddn.com/name1.jpg">
+                                        </span>
+                                        <span class="m_name">陈浩</span>
+                                    </div>
+                                    <p class="slogan">广告部工头，只关心这个好创意是不是可以多赚点钱</p>
+                                </div>
+                                <div class="same_size size_2">
+                                    <div>
+                                        <span>
+                                            <img src="http://p5w1f51o8.bkt.clouddn.com/name2.jpg">
+                                        </span>
+                                        <span class="m_name">陈莉雅</span>
+                                    </div>
+                                    <p class="slogan">记者。一名来自台湾的猫奴。</p>
+                                </div>
+                                <div class="same_size size_3">
+                                    <div>
+                                        <span>
+                                            <img src="http://p5w1f51o8.bkt.clouddn.com/name3.jpg">
+                                        </span>
+                                        <span class="m_name">陈婉君</span>
+                                    </div>
+                                    <p class="slogan">广告小助理/沉迷古着/宕机少女</p>
+                                </div>
+                                <div class="same_size size_4">
+                                    <div>
+                                        <span>
+                                            <img src="http://p5w1f51o8.bkt.clouddn.com/name4.jpg">
+                                        </span>
+                                        <span class="m_name">冯秀霞</span>
+                                    </div>
+                                    <p class="slogan">信息可视化编辑。曾任 China Daily 信息图表设计师。 对将信息化繁为简的艺术充满热情。</p>
+                                </div>
+                                <div class="same_size">
+                                    <div>
+                                        <span>
+                                            <img src="http://p5w1f51o8.bkt.clouddn.com/name5.jpg">
+                                        </span>
+                                        <span class="m_name">龚方毅</span>
+                                    </div>
+                                    <p class="slogan">文字工作者一枚，乐观的悲观主义者。目前在《好奇心日报》智能组搬砖。</p>
+                                </div>
+                                <div class="same_size">
+                                    <div>
+                                        <span>
+                                            <img src="http://p5w1f51o8.bkt.clouddn.com/name6.jpg">
+                                        </span>
+                                        <span class="m_name">顾天鹂</span>
+                                    </div>
+                                    <p class="slogan">记者，DC 精神股东，站队阿萨辛，钻研魂学中。想和马一龙去火星，不过在那之前还是留在好奇心好好学习。</p>
+                                </div>
+                                <div class="same_size">
+                                    <div>
+                                        <span>
+                                            <img src="http://p5w1f51o8.bkt.clouddn.com/name7.jpg">
+                                        </span>
+                                        <span class="m_name">韩方航</span>
+                                    </div>
+                                    <p class="slogan">记者，间歇性地并且毫不专业地热爱着推理小说恐怖漫画日俄文学尼采康德。</p>
+                                </div>
+                                <div class="same_size">
+                                    <div>
+                                        <span>
+                                            <img src="http://p5w1f51o8.bkt.clouddn.com/name8.jpg">
+                                        </span>
+                                        <span class="m_name">胡晓琪</span>
+                                    </div>
+                                    <p class="slogan">记者。还剩一点绮丽幻想。</p>
+                                </div>
+                                <div class="same_size">
+                                    <div>
+                                        <span>
+                                            <img src="http://p5w1f51o8.bkt.clouddn.com/name9.jpg">
+                                        </span>
+                                        <span class="m_name">胡莹</span>
+                                    </div>
+                                    <p class="slogan">记者，曾在报馆混迹两年。在 Qdaily 每天都满世界找寻好玩好看好用的了不起也买不起的设计。不擅社交，认为人生的勇气来自独处，和持续供给的好奇心。</p>
+                                </div>
+                                <div class="same_size">
+                                    <div>
+                                        <span>
+                                            <img src="http://p5w1f51o8.bkt.clouddn.com/name10.jpg">
+                                        </span>
+                                        <span class="m_name">华洁</span>
+                                    </div>
+                                    <p class="slogan">帝都市井一混徒，卖点儿广告养家糊口，若你喜欢坏人，其实我还行。</p>
+                                </div>
+                                <div class="same_size">
+                                    <div>
+                                        <span>
+                                            <img src="http://p5w1f51o8.bkt.clouddn.com/name11.jpg">
+                                        </span>
+                                        <span class="m_name">黄俊杰</span>
+                                    </div>
+                                    <p class="slogan">联合主编。做一些“让历史的草稿更不像草稿”的工作，此前是《第一财经周刊》主笔、参与爱范儿初创。关注有趣的应用、奇怪的硬件、不智能的人工智能，通过咖啡因和酒精调整工作状态。</p>
+                                </div>
+                                <div class="same_size">
+                                    <div>
+                                        <span>
+                                            <img src="http://p5w1f51o8.bkt.clouddn.com/name12.jpg">
+                                        </span>
+                                        <span class="m_name">黄靖闵</span>
+                                    </div>
+                                    <p class="slogan">市场部小蜜蜂，一粒行走的米米米，说风就是雨对未知充满好奇，想要体验所有新鲜事物~热爱各类鬼片悬疑片</p>
+                                </div>
+                                <div class="same_size">
+                                    <div>
+                                        <span>
+                                            <img src="http://p5w1f51o8.bkt.clouddn.com/name13.jpg">
+                                        </span>
+                                        <span class="m_name">李会娜</span>
+                                    </div>
+                                    <p class="slogan">「好奇心日报」编辑，曾任《第一财经周刊》记者，主要为营销类报道和长文章卖命。</p>
+                                </div>
+                                <div class="same_size">
+                                    <div>
+                                        <span>
+                                            <img src="http://p5w1f51o8.bkt.clouddn.com/name14.jpg">
+                                        </span>
+                                        <span class="m_name">李麑</span>
+                                    </div>
+                                    <p class="slogan">写字的，胃口好，记性不好。</p>
+                                </div>
+                                <div class="same_size">
+                                    <div>
+                                        <span>
+                                            <img src="http://p5w1f51o8.bkt.clouddn.com/name15.jpg">
+                                        </span>
+                                        <span class="m_name">李翼儿</span>
+                                    </div>
+                                    <p class="slogan">喜欢自然科学的 UI 设计师，讨厌丑...</p>
+                                </div>
+                                <div class="same_size">
+                                    <div>
+                                        <span>
+                                            <img src="http://p5w1f51o8.bkt.clouddn.com/name16.jpg">
+                                        </span>
+                                        <span class="m_name">李哲</span>
+                                    </div>
+                                    <p class="slogan">好奇心研究所成员，正在练习观察和吐槽。</p>
+                                </div>
+                                <div class="same_size">
+                                    <div>
+                                        <span>
+                                            <img src="http://p5w1f51o8.bkt.clouddn.com/name17.jpg">
+                                        </span>
+                                        <span class="m_name">林艳芳</span>
+                                    </div>
+                                    <p class="slogan">「好奇心日报」财务，7 年财务求学历程，一直为我的财务梦想-CFO努力中！</p>
+                                </div>
+                                <div class="same_size">
+                                    <div>
+                                        <span>
+                                            <img src="http://p5w1f51o8.bkt.clouddn.com/name18.jpg">
+                                        </span>
+                                        <span class="m_name">林玉尧</span>
+                                    </div>
+                                    <p class="slogan">美编，夜猫属性，外表看似正常但脑内有巨坑，不定时爆发。</p>
+                                </div>
+                                <div class="same_size">
+                                    <div>
+                                        <span>
+                                            <img src="http://p5w1f51o8.bkt.clouddn.com/name19.jpg">
+                                        </span>
+                                        <span class="m_name">刘璐天</span>
+                                    </div>
+                                    <p class="slogan">杂食动物。好玩儿的东西太多了，我们一起去发现。</p>
+                                </div>
+                                <div class="same_size">
+                                    <div>
+                                        <span>
+                                            <img src="http://p5w1f51o8.bkt.clouddn.com/name20.jpg">
+                                        </span>
+                                        <span class="m_name">刘宁</span>
+                                    </div>
+                                    <p class="slogan">产品汪。爱的多好的少。</p>
+                                </div>
+                                <div class="same_size">
+                                    <div>
+                                        <span>
+                                            <img src="http://p5w1f51o8.bkt.clouddn.com/name21.jpg">
+                                        </span>
+                                        <span class="m_name">刘伟</span>
+                                    </div>
+                                    <p class="slogan">一颗普通的螺丝钉，喜欢自由，目前是一名iOS开发者，现就职于一家有态度的公司 好奇心日报</p>
+                                </div>
+                                <div class="same_size">
+                                    <div>
+                                        <span>
+                                            <img src="http://p5w1f51o8.bkt.clouddn.com/name22.jpg">
+                                        </span>
+                                        <span class="m_name">罗骢</span>
+                                    </div>
+                                    <p class="slogan">记者，拥有一颗 Jump 心，珍惜写下的每个字，相信你占有的东西最终会占有你。</p>
+                                </div>
+                                <div class="same_size">
+                                    <div>
+                                        <span>
+                                            <img src="http://p5w1f51o8.bkt.clouddn.com/name23.jpg">
+                                        </span>
+                                        <span class="m_name">马若飞</span>
+                                    </div>
+                                    <p class="slogan">偶而感性的理性派，宠辱皆惊，喜怒都形于色。根据当地的法律与法规，部分个性未予显示。</p>
+                                </div>
+                                <div class="same_size">
+                                    <div>
+                                        <span>
+                                            <img src="http://p5w1f51o8.bkt.clouddn.com/name24.jpg">
+                                        </span>
+                                        <span class="m_name">潘姜汐熹</span>
+                                    </div>
+                                    <p class="slogan">学过一点历史，现在为生活研究所贡献爱意，使命感，与道德力量。</p>
+                                </div>
+                                <div class="same_size">
+                                    <div>
+                                        <span>
+                                            <img src="http://p5w1f51o8.bkt.clouddn.com/name25.jpg">
+                                        </span>
+                                        <span class="m_name">任凡</span>
+                                    </div>
+                                    <p class="slogan">阳光依赖症患者，广告圈非专业人士。诗酒茶花香，仗剑走天涯。</p>
+                                </div>
+                                <div class="same_size">
+                                    <div>
+                                        <span>
+                                            <img src="http://p5w1f51o8.bkt.clouddn.com/name26.jpg">
+                                        </span>
+                                        <span class="m_name">邵嘉鸣</span>
+                                    </div>
+                                    <p class="slogan">非典型典型摩羯女、爱生活也爱工作的天生广告星人一枚，脑洞大开！</p>
+                                </div>
+                                <div class="same_size">
+                                    <div>
+                                        <span>
+                                            <img src="http://p5w1f51o8.bkt.clouddn.com/name27.jpg">
+                                        </span>
+                                        <span class="m_name">沈非</span>
+                                    </div>
+                                    <p class="slogan">版权编辑。好看的东西太多，我们慢慢看。</p>
+                                </div>
+                                <div class="same_size">
+                                    <div>
+                                        <span>
+                                            <img src="http://p5w1f51o8.bkt.clouddn.com/name28.jpg">
+                                        </span>
+                                        <span class="m_name">石丹廷</span>
+                                    </div>
+                                    <p class="slogan">混迹广告圈的猫奴，曾自信吃不胖然而逃不出自然规律的乐天派</p>
+                                </div>
+                                <div class="same_size">
+                                    <div>
+                                        <span>
+                                            <img src="http://p5w1f51o8.bkt.clouddn.com/name29.jpg">
+                                        </span>
+                                        <span class="m_name">孙汕锟</span>
+                                    </div>
+                                    <p class="slogan">码农。热爱生活，没事得瑟的程序猿。</p>
+                                </div>
+                                <div class="same_size">
+                                    <div>
+                                        <span>
+                                            <img src="http://p5w1f51o8.bkt.clouddn.com/name30.jpg">
+                                        </span>
+                                        <span class="m_name">孙涛</span>
+                                    </div>
+                                    <p class="slogan">不穿格子衫的程序猿。人生何所求，致富和自由。 （后面那人真不是我）</p>
+                                </div>
+                                <div class="same_size">
+                                    <div>
+                                        <span>
+                                            <img src="http://p5w1f51o8.bkt.clouddn.com/name31.jpg">
+                                        </span>
+                                        <span class="m_name">孙涛</span>
+                                    </div>
+                                    <p class="slogan">程序猿，一看就不是什么正经程序员的那种，想把每天都活成电影，并励志要成为好奇心代码写的最 6 的段子手。 （前面那人真不是我）</p>
+                                </div>
+                                <div class="same_size">
+                                    <div>
+                                        <span>
+                                            <img src="http://p5w1f51o8.bkt.clouddn.com/name32.jpg">
+                                        </span>
+                                        <span class="m_name">唐云路</span>
+                                    </div>
+                                    <p class="slogan">记者，漂流过四所大学，写一点智能，做一点生活实验。目前对宇宙的好奇略大于对人类的兴趣。</p>
+                                </div>
+                                <div class="same_size">
+                                    <div>
+                                        <span>
+                                            <img src="http://p5w1f51o8.bkt.clouddn.com/name33.jpg">
+                                        </span>
+                                        <span class="m_name">王朝靖</span>
+                                    </div>
+                                    <p class="slogan">好奇心研究所成员，坐地板爱好者。</p>
+                                </div>
+                                <div class="same_size">
+                                    <div>
+                                        <span>
+                                            <img src="http://p5w1f51o8.bkt.clouddn.com/name34.jpg">
+                                        </span>
+                                        <span class="m_name">王华蓉</span>
+                                    </div>
+                                    <p class="slogan">广告部 PPT 女工，口口声声说自己是少女，不自主地散发中老年气息，经常被问路，一直怀疑自己脸上长地图。</p>
+                                </div>
+                                <div class="same_size">
+                                    <div>
+                                        <span>
+                                            <img src="http://p5w1f51o8.bkt.clouddn.com/name35.jpg">
+                                        </span>
+                                        <span class="m_name">王嘉妮</span>
+                                    </div>
+                                    <p class="slogan">UI 设计师，拿着个豆沙包我突然明白，催了我这么多次的简介还是不晓得要写啥。</p>
+                                </div>
+                                <div class="same_size">
+                                    <div>
+                                        <span>
+                                            <img src="http://p5w1f51o8.bkt.clouddn.com/name36.jpg">
+                                        </span>
+                                        <span class="m_name">王帅</span>
+                                    </div>
+                                    <p class="slogan">电子控，中毒好莱坞大片。</p>
+                                </div>
+                                <div class="same_size">
+                                    <div>
+                                        <span>
+                                            <img src="http://p5w1f51o8.bkt.clouddn.com/name37.jpg">
+                                        </span>
+                                        <span class="m_name">温欣语</span>
+                                    </div>
+                                    <p class="slogan">宇宙专业舞者 自带灵魂。</p>
+                                </div>
+                                <div class="same_size">
+                                    <div>
+                                        <span>
+                                            <img src="http://p5w1f51o8.bkt.clouddn.com/name38.jpg">
+                                        </span>
+                                        <span class="m_name">谢梦洁</span>
+                                    </div>
+                                    <p class="slogan">首页编辑，普通中二，喜欢好天气和想象力。</p>
+                                </div>
+                                <div class="same_size">
+                                    <div>
+                                        <span>
+                                            <img src="http://p5w1f51o8.bkt.clouddn.com/name39.jpg">
+                                        </span>
+                                        <span class="m_name">谢金萍</span>
+                                    </div>
+                                    <p class="slogan">记者。对时间不敏感，间歇性情绪病，认为自己是乐观的悲观主义者。</p>
+                                </div>
+                                <div class="same_size">
+                                    <div>
+                                        <span>
+                                            <img src="http://p5w1f51o8.bkt.clouddn.com/name40.jpg">
+                                        </span>
+                                        <span class="m_name">徐弢</span>
+                                    </div>
+                                    <p class="slogan">记者，一介岛民。误入科技坑，现在以低等级别的码农为目标。</p>
+                                </div>
+                                <div class="same_size">
+                                    <div>
+                                        <span>
+                                            <img src="http://p5w1f51o8.bkt.clouddn.com/name41.jpg">
+                                        </span>
+                                        <span class="m_name">徐雪晴</span>
+                                    </div>
+                                    <p class="slogan">记者。小时候由于好奇心过剩，被老师预言未来会成为一名记者。</p>
+                                </div>
+                                <div class="same_size">
+                                    <div>
+                                        <span>
+                                            <img src="http://p5w1f51o8.bkt.clouddn.com/name42.jpg">
+                                        </span>
+                                        <span class="m_name">徐源</span>
+                                    </div>
+                                    <p class="slogan">CTO，喜欢依托技术的天马行空。</p>
+                                </div>
+                                <div class="same_size">
+                                    <div>
+                                        <span>
+                                            <img src="http://p5w1f51o8.bkt.clouddn.com/name43.jpg">
+                                        </span>
+                                        <span class="m_name">宣海伦</span>
+                                    </div>
+                                    <p class="slogan">记者，有时用力（过猛。</p>
+                                </div>
+                                <div class="same_size">
+                                    <div>
+                                        <span>
+                                            <img src="http://p5w1f51o8.bkt.clouddn.com/name44.jpg">
+                                        </span>
+                                        <span class="m_name">晏文静</span>
+                                    </div>
+                                    <p class="slogan">记者，好笑很重要。</p>
+                                </div>
+                                <div class="same_size">
+                                    <div>
+                                        <span>
+                                            <img src="http://p5w1f51o8.bkt.clouddn.com/name45.jpg">
+                                        </span>
+                                        <span class="m_name">杨宽</span>
+                                    </div>
+                                    <p class="slogan">智能组记者，生活的英雄主义者</p>
+                                </div>
+                                <div class="same_size">
+                                    <div>
+                                        <span>
+                                            <img src="http://p5w1f51o8.bkt.clouddn.com/name46.jpg">
+                                        </span>
+                                        <span class="m_name">杨瑞</span>
+                                    </div>
+                                    <p class="slogan">黑夜给了我黑色的翅膀，我却用它去寻找天堂 —— 进化未完成的古猿一只。</p>
+                                </div>
+                                <div class="same_size">
+                                    <div>
+                                        <span>
+                                            <img src="http://p5w1f51o8.bkt.clouddn.com/name47.jpg">
+                                        </span>
+                                        <span class="m_name">杨樱</span>
+                                    </div>
+                                    <p class="slogan">联合主编。淀粉爱好者。</p>
+                                </div>
+                                <div class="same_size">
+                                    <div>
+                                        <span>
+                                            <img src="http://p5w1f51o8.bkt.clouddn.com/name48.jpg">
+                                        </span>
+                                        <span class="m_name">杨维佳</span>
+                                    </div>
+                                    <p class="slogan">所有人类学科的研究员，打算重新定义广告这件事儿。人生信念「人类是机器，世界是幻术」</p>
+                                </div>
+                                <div class="same_size">
+                                    <div>
+                                        <span>
+                                            <img src="http://p5w1f51o8.bkt.clouddn.com/name49.jpg">
+                                        </span>
+                                        <span class="m_name">伊险峰</span>
+                                    </div>
+                                    <p class="slogan">在创办「好奇心日报」之前，曾经在《第一财经周刊》、《东方早报》、《经济观察报》等多个媒体工作。</p>
+                                </div>
+                                <div class="same_size">
+                                    <div>
+                                        <span>
+                                            <img src="http://p5w1f51o8.bkt.clouddn.com/name50.jpg">
+                                        </span>
+                                        <span class="m_name">岳凌辉</span>
+                                    </div>
+                                    <p class="slogan">Android 开发，前京东金融员工。写代码之外的时光都献给了游戏，篮球，定向和小说，是一个“半宅不宅”的“半宅男”。</p>
+                                </div>
+                                <div class="same_size">
+                                    <div>
+                                        <span>
+                                            <img src="http://p5w1f51o8.bkt.clouddn.com/name51.jpg">
+                                        </span>
+                                        <span class="m_name">曾玉涵</span>
+                                    </div>
+                                    <p class="slogan">广告策划，一直致力于成为美少女的少女曾，结果在客户爸爸的关怀中醉生梦死。</p>
+                                </div>
+                                <div class="same_size">
+                                    <div>
+                                        <span>
+                                            <img src="http://p5w1f51o8.bkt.clouddn.com/name52.jpg">
+                                        </span>
+                                        <span class="m_name">张丹</span>
+                                    </div>
+                                    <p class="slogan">记者。码字搬砖，以梦为马</p>
+                                </div>
+                                <div class="same_size">
+                                    <div>
+                                        <span>
+                                            <img src="http://p5w1f51o8.bkt.clouddn.com/name53.jpg">
+                                        </span>
+                                        <span class="m_name">张林</span>
+                                    </div>
+                                    <p class="slogan">广告部的切配工。有拖延症的急性子。</p>
+                                </div>
+                                <div class="same_size">
+                                    <div>
+                                        <span>
+                                            <img src="http://p5w1f51o8.bkt.clouddn.com/name54.jpg">
+                                        </span>
+                                        <span class="m_name">张瑞卿</span>
+                                    </div>
+                                    <p class="slogan">平常之中的强烈责任，用踏实的心征服“躁动”的事务</p>
+                                </div>
+                                <div class="same_size">
+                                    <div>
+                                        <span>
+                                            <img src="http://p5w1f51o8.bkt.clouddn.com/name55.jpg">
+                                        </span>
+                                        <span class="m_name">张诗晨</span>
+                                    </div>
+                                    <p class="slogan">广告文案，曾经恨未出生于旧世界的灿烂文明，最近发现自己活在黄金时代。Thug life</p>
+                                </div>
+                                <div class="same_size">
+                                    <div>
+                                        <span>
+                                            <img src="http://p5w1f51o8.bkt.clouddn.com/name56.jpg">
+                                        </span>
+                                        <span class="m_name">张勇</span>
+                                    </div>
+                                    <p class="slogan">总经理。一个有梦想的人。</p>
+                                </div>
+                                <div class="same_size">
+                                    <div>
+                                        <span>
+                                            <img src="http://p5w1f51o8.bkt.clouddn.com/name57.jpg">
+                                        </span>
+                                        <span class="m_name">周佳颖</span>
+                                    </div>
+                                    <p class="slogan">广告部的小管事，混世的大魔王。</p>
+                                </div>
+                                <div class="same_size">
+                                    <div>
+                                        <span>
+                                            <img src="http://p5w1f51o8.bkt.clouddn.com/name58.jpg">
+                                        </span>
+                                        <span class="m_name">周韶宏</span>
+                                    </div>
+                                    <p class="slogan">记者，关注科技相关的一切段子，热爱在凌晨以后开脑洞。作为一个红楼梦爱好者，坚信哈利波特的霍格沃兹是真实存在的。</p>
+                                </div>
+                                <div class="same_size">
+                                    <div>
+                                        <span>
+                                            <img src="http://p5w1f51o8.bkt.clouddn.com/name59.jpg">
+                                        </span>
+                                        <span class="m_name">周哲浩</span>
+                                    </div>
+                                    <p class="slogan">记者。听音乐的时候会比较中二。</p>
+                                </div>
+                                <div class="same_size">
+                                    <div>
+                                        <span>
+                                            <img src="http://p5w1f51o8.bkt.clouddn.com/name60.jpg">
+                                        </span>
+                                        <span class="m_name">朱凯麟</span>
+                                    </div>
+                                    <p class="slogan">记者，敬你一杯泛银河系含漱爆破药。</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="join">
+                                <div>
+                                    <span></span>
+                                    <p>成为《好奇心实验室》的小白鼠</p>
+                                </div>
+                                <div>
+                                    <p>你是 25% 好奇心俱乐部的一员，喜欢研究这个世界。快来加入好奇心实验室，发现更多秘密。</p>
+                                </div>
+                                <div>
+                                    <p>详情联系:</p>
+                                    <a href="javascript:;">lab@qdaily.com</a>
+                                </div>
+                            </div>
+                            <div class="j_member">
+                                <div>
+                                    <span></span>
+                                    <p>成为《好奇心日报》的一员</p>
+                                </div>
+                                <div>
+                                    <p>想为好奇心日报做点什么，加入我们，简历投放至: </p>
+                                    <a href="javascript:;">info@qdaily.com</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="list">
+            <a href="javascript:;">
+                <img src="http://p5w1f51o8.bkt.clouddn.com/logo.png">
+                <i class="iconfont img_icon">&#xe628;</i>
+                <i class="iconfont img_icon1">&#xe666;</i>
+                <i class="iconfont img_icon2">&#xe665;</i>
+            </a>
+        </div>
+        <div class="same_bottom">
+            <div class="s_b_top">
+                <div class="many_ul">
+                    <ul>
+                        <li>
+                            <a href="index.html" target="_blank">
+                                首页
+                            </a>
+                        </li>
+                        <li>
+                            <a href="long_article.html" target="_blank">
+                                长文章
+                            </a>
+                        </li>
+                        <li>
+                            <a href="Top 15.html" target="_blank">
+                                TOP 15
+                            </a>
+                        </li>
+                        <li>
+                            <a href="picture.html" target="_blank">
+                                10 个图
+                            </a>
+                        </li>
+                        <li>
+                            <a href="research.html" target="_blank">
+                                好奇心研究所
+                            </a>
+                        </li>
+                        <li>
+                            <a href="column.html" target="_blank">
+                                100个有想法的人
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                Medium
+                            </a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="big_company.html" target="_blank">
+                                大公司头条
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                Q Business
+                            </a>
+                        </li>
+                        <li>
+                            <a href="column.html" target="_blank">
+                                今日应用
+                            </a>
+                        </li>
+                        <li>
+                            <a href="column.html" target="_blank">
+                                这世界
+                            </a>
+                        </li>
+                        <li>
+                            <a href="best_on_the_web.html" target="_blank">
+                                Best on the web
+                            </a>
+                        </li>
+                        <li>
+                            <a href="business.html" target="_blank">
+                                商业
+                            </a>
+                        </li>
+                        <li>
+                            <a href="magic.html" target="_blank">
+                                智能
+                            </a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="design.html" target="_blank">
+                                设计
+                            </a>
+                        </li>
+                        <li>
+                            <a href="fashion.html" target="_blank">
+                                时尚
+                            </a>
+                        </li>
+                        <li>
+                            <a href="happiness.html" target="_blank">
+                                娱乐
+                            </a>
+                        </li>
+                        <li>
+                            <a href="city.html" target="_blank">
+                                城市
+                            </a>
+                        </li>
+                        <li>
+                            <a href="game.html" target="_blank">
+                                游戏
+                            </a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="app.html">
+                                下载APP
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" class="login_img">
+                                登录 / 注册
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                订阅
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://weibo.com/qdaily" target="_blank">
+                                微博
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" class="show_a">
+                                微信
+                                <div class="wei_xin_bottom">
+                                    <div id="weixin_code"></div>
+                                    <p class="code_word">好奇心微信公众号</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="use_ agreement.html" target="_blank">
+                                用户协议
+                            </a>
+                        </li>
+                        <li>
+                            <a href="use_ agreement.html#privacy" target="_blank">
+                                隐私政策
+                            </a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="app.html">
+                                关于好奇心
+                            </a>
+                        </li>
+                        <li>
+                            <a href="app.html">
+                                联系我们
+                            </a>
+                        </li>
+                        <li>
+                            <a href="app.html">
+                                工作机会
+                            </a>
+                        </li>
+                        <li>
+                            <a href="use_ agreement.html#copyright" target="_blank">
+                                版权声明
+                            </a>
+                        </li>
+                    </ul>
+                    <form action="/searches" target="_blank" class="search_form">
+                        <input type="text">
+                        <span>
+                            <i class="iconfont">&#xe6fe;</i>
+                        </span>
+                    </form>
+                </div>
+            </div>
+            <div class="s_b_bottom">
+                <div class="power_right">
+                    <div class="right_img">
+                        <img src="http://p5w1f51o8.bkt.clouddn.com/logo.png">
+                    </div>
+                    <div class="right_word">
+                        <p>2014 北京酷睿奥思科技发展有限公司</p>
+                        <p>京ICP备14027177号-1</p>
+                        <span>
+                            <img src="http://p5w1f51o8.bkt.clouddn.com/Police.png">
+                        </span>
+                        <p>京公网安备 11010502030071号</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/social-share.min.js"></script>
+    <script src="js/same.js"></script>
+    <script src="js/app.js"></script>
+    <script>
+        //配置share.js的参数
+        socialShare('.social-share', {
+            title: '作为一个有好奇心的人，我发现了一个有想法的App！它叫《好奇心日报》。',
+            image: 'http://p5w1f51o8.bkt.clouddn.com/max_banner.jpg',
+            url: 'http://m.qdaily.com/mobile/downloads.html',
+            description: '作为一个有好奇心的人，我发现了一个有想法的App！它叫《好奇心日报》。',
+        });
+    </script>
+</body>
+
+</html>

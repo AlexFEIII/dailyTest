@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="http://p5w1f51o8.bkt.clouddn.com/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../fonts/font.css">
+    <link rel="stylesheet" href="../css/same.css">
+    <link rel="stylesheet" href="../css/research.css">
+    <link rel="stylesheet" href="../css/user_agreement.css">
+    <title>好奇心日报_好奇驱使你的世界_Qdaily</title>
+    <script src="../js/jQuery.js"></script>
+    <script src="../js/jcanvas.min.js"></script>
+    <script src="../js/jquery.qrcode.js"></script>
+</head>
+
+<body>
+    <div id="box">
+        <div class="nav">
+            <div class="left">
+                <div class="div_a">
+                    <a href="index.html" id="logo_content" target="_blank">
+                        <img src="http://p5w1f51o8.bkt.clouddn.com/logo.png" id="logo">
+                    </a>
+                    <a href="index.html" id="logo_box" target="_blank">
+                        <img src="http://p5w1f51o8.bkt.clouddn.com/curious.jpg" id="logo_bottom">
+                    </a>
+                </div>
+                <ul id="item_left">
+                    <li>
+                        <a href="research.html" target="_blank" style="color:#ffc81f">
+                            <span class="span_icon1">
+                                <i class="iconfont">&#xe64a;</i>
+                            </span>
+                            <p>好奇心研究所</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="column.html" target="_blank">
+                            <span class="span_icon2">
+                                <i class="iconfont">&#xe6f9;</i>
+                            </span>
+                            <p>栏目中心</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="middle">
+                <ul id="middle_item">
+                    <li>
+                        <a href="long_article.html" target="_blank">
+                            长文章
+                        </a>
+                    </li>
+                    <li>
+                        <a href="picture.html" target="_blank">
+                            10 个图
+                        </a>
+                    </li>
+                    <li>
+                        <a href="Top 15.html" target="_blank">
+                            Top 15
+                        </a>
+                    </li>
+                    <li>
+                        <a href="business.html" target="_blank">
+                            商业
+                        </a>
+                    </li>
+                    <li>
+                        <a href="magic.html" target="_blank">
+                            智能
+                        </a>
+                    </li>
+                    <li>
+                        <a href="design.html" target="_blank">
+                            设计
+                        </a>
+                    </li>
+                    <li>
+                        <a href="fashion.html" target="_blank">
+                            时尚
+                        </a>
+                    </li>
+                    <li>
+                        <a href="happiness.html" target="_blank">
+                            娱乐
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" id="last_icon">
+                            全部分类
+                            <i class="iconfont down">&#xe601;</i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="right">
+                <div class="app">
+                    <a href="app.html" id="app_a" target="_blank">
+                        APP
+                    </a>
+                </div>
+                <div class="icon_s">
+                    <a href="javascript:;" class="search">
+                        <i class="iconfont">&#xe6fe;</i>
+                    </a>
+                </div>
+                <div class="about_us">
+                    <span class="login">
+                        <a href="javascript:;" class="login_img">
+                            <img src="http://p5w1f51o8.bkt.clouddn.com/login.png">
+                        </a>
+                        <a href="javascript:;" class="login_img">
+                            登录
+                        </a>
+                    </span>
+                    <span>
+                        <a href="app.html" target="_blank">
+                            关于我们
+                        </a>
+                    </span>
+                    <span>
+                        <a href="http://weibo.com/qdaily" class="icon_a" target="_blank">
+                            <i class="iconfont">&#xe65a;</i>
+                        </a>
+                    </span>
+                    <span>
+                        <a href="javascript:;" class="icon_a">
+                            <i class="iconfont">&#xe69a;</i>
+                            <div class="weixin_box">
+                                <div id="QR_Code"></div>
+                                <p id="number">好奇心微信公众号</p>
+                            </div>
+                        </a>
+                    </span>
+                </div>
+            </div>
+            <div class="page_nav">
+                <ul id="page_ul">
+                    <li>
+                        <a href="long_article.html" target="_blank">
+                            <span>
+                                <i class="iconfont">&#xe61c;</i>
+                            </span>
+                            <p>
+                                长文章
+                            </p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="picture.html" target="_blank">
+                            <span>
+                                <i class="iconfont">&#xe61c;</i>
+                            </span>
+                            <p>
+                                10 个图
+                            </p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="Top 15.html" target="_blank">
+                            <span>
+                                <i class="iconfont">&#xe61c;</i>
+                            </span>
+                            <p>
+                                Top 15
+                            </p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="business.html" target="_blank">
+                            <span>
+                                <i class="iconfont">&#xe61c;</i>
+                            </span>
+                            <p>
+                                商业
+                            </p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="magic.html" target="_blank">
+                            <span>
+                                <i class="iconfont">&#xe61c;</i>
+                            </span>
+                            <p>
+                                智能
+                            </p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="design.html" target="_blank">
+                            <span>
+                                <i class="iconfont">&#xe61c;</i>
+                            </span>
+                            <p>
+                                设计
+                            </p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="fashion.html" target="_blank">
+                            <span>
+                                <i class="iconfont">&#xe61c;</i>
+                            </span>
+                            <p>
+                                时尚
+                            </p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="happiness.html" target="_blank">
+                            <span>
+                                <i class="iconfont">&#xe61c;</i>
+                            </span>
+                            <p>
+                                娱乐
+                            </p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="city.html" target="_blank">
+                            <span>
+                                <i class="iconfont">&#xe61c;</i>
+                            </span>
+                            <p>
+                                城市
+                            </p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="game.html" target="_blank">
+                            <span>
+                                <i class="iconfont">&#xe61c;</i>
+                            </span>
+                            <p>
+                                游戏
+                            </p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="main_container" style="padding-bottom: 50px">
+            <div class="out_o">
+                <div class="out_fit">
+                    <p class="top_p">用户协议</p>
+                    <div class="explain">
+                        衷心欢迎您访问好奇心日报网站,请仔细阅读本法律声明。您在好奇心日报网站的一切行为将被认为您接受以下服务协议。
+                    </div>
+                    <div class="all_content">
+                        <p>1) 好奇心日报网站服务条款的确认和接纳</p>
+                        <p>好奇心日报网站各项电子服务的所有权和运作权归北京酷睿奥思科技发展有限公司。好奇心日报网站</p>
+                        <p>提供的服务将完全按照其发布的章程、服务条款和操作规则严格执行。用户必须完全同意所有服务条</p>
+                        <p>款并完成注册程序，才能成为好奇心日报网站的正式用户。</p>
+                        <p>2)服务简介</p>
+                        <p>好奇心日报网站运用自己的操作系统通过国际互联网络为用户提供网络服务。同时，用户必须：</p>
+                        <p>(1)自行配备上网所需设备，包括个人电脑、调制解调器或其他必备上网装置。</p>
+                        <p>(2)自行负担个人上网所支付的与此服务有关的电话费用、网络费用。</p>
+                        <p>基于好奇心日报网站所提供的网络服务的重要性，用户应同意：</p>
+                        <p>(1)提供详尽、准确的个人资料。</p>
+                        <p>(2)不断更新注册资料，符合及时、详尽、准确的要求。</p>
+                        <p>好奇心日报网站不公开用户的姓名、地址、电子邮箱和笔名，但以下情况例外：</p>
+                        <p>(1)用户授权好奇心日报网站透露这些信息。</p>
+                        <p>(2)相应的法律及程序要求好奇心日报网站提供用户的个人资料。如果用户提供的资料包含有不正确的</p>
+                        <p>信息，好奇心日报网站保留结束用户使用网络服务资格的权利。</p>
+                        <p>3)服务条款的修改和服务修订</p>
+                        <p>好奇心日报网站有权在必要时修改服务条款，好奇心日报网站服务条款一旦发生变动，将会在重要页</p>
+                        <p>面上提示修改内容。如果不同意所改动的内容，用户可以主动取消获得的网络服务。如果用户继续享</p>
+                        <p>用网络服务，则视为接受服务条款的变动。好奇心日报网站保留随时修改或中断免费服务而不需知照</p>
+                        <p>用户的权利。好奇心日报网站行使修改或中断免费服务的权利，不需对用户或第三方负责。</p>
+                        <p>4)用户隐私制度</p>
+                        <p>尊重用户个人隐私是好奇心日报网站的一项基本政策。好奇心日报网站不会在未经合法用户授权时公</p>
+                        <p>开、编辑或透露其注册资料及其它保存在好奇心日报网站中的非公开内容，但不包括以下四种必要情</p>
+                        <p>况：</p>
+                        <p>(1)遵守有关法律规定，遵从好奇心日报网站合法服务程序。</p>
+                        <p>(2)维护好奇心日报网站的商标所有权。</p>
+                        <p>(3)在紧急情况下竭力维护用户个人和社会大众的隐私安全。</p>
+                        <p>(4)符合其他相关的要求。</p>
+                        <p>5)用户的帐号，密码和安全性</p>
+                        <p>用户一旦注册成功，成为好奇心日报网站的合法用户，将自行设定一个密码和用户名。用户将对用户</p>
+                        <p>名和密码安全负全部责任。另外，每个用户都要对以其用户名进行的所有活动和事件负全责。用户若</p>
+                        <p>发现任何非法使用用户帐号或存在安全漏洞的情况，请立即通告好奇心日报网站。</p>
+                        <p>6)用户管理</p>
+                        <p>用户单独承担发布内容的责任。用户对服务的使用是根据所有适用于好奇心日报网站的国家法律、地</p>
+                        <p>地方法律和国际法律标准的。用户必须遵循：</p>
+                        <p>(1)从中国境内向外传输技术性资料时必须符合中国有关法规。</p>
+                        <p>(2)使用网络服务不作非法用途。</p>
+                        <p>(3)不干扰或混乱网络服务。</p>
+                        <p>(4)遵守所有使用网络服务的网络协议、规定、程序和惯例。</p>
+                        <p>用户须承诺不传输任何非法的、骚扰性的、中伤他人的、辱骂性的、恐吓性的、伤害性的、庸俗的，</p>
+                        <p>淫秽等信息资料。另外，用户也不能传输任何教唆他人构成犯罪行为的资料；不能传输助长国内不利</p>
+                        <p>条件和涉及国家安全的资料；不能传输任何不符合当地法规、国家法律和国际法律的资料。未经许可</p>
+                        <p>而非法进入其它电脑系统是禁止的。若用户的行为不符合以上提到的服务条款，好奇心日报网站将作</p>
+                        <p>出独立判断立即取消用户服务帐号。用户需对自己在网上行为承担法律责任。用户若在好奇心日报网</p>
+                        <p>站上散布和传播反动、色情或其他违反国家法律的信息，好奇心日报网站的系统记录有可能作为用户</p>
+                        <p>违反法律的证据。</p>
+                        <p>7)网络服务内容的所有权</p>
+                        <p>好奇心日报网站定义的网络服务内容包括：文字、软件、声音、图片、录像、图表、广告中的全部内</p>
+                        <p>容；电子邮件的全部内容；好奇心日报网站为用户提供的其他信息。所有这些内容受版权、商标、标</p>
+                        <p>签和其它财产所有权法律的保护。所以，用户只能在好奇心日报网站授权下才能使用这些内容，而不</p>
+                        <p>能擅自复制、再造这些内容、或创造与内容有关的派生产品。好奇心日报网站所载的内容版权归好奇</p>
+                        <p>心日报所有，好奇心日报网站拥有授权他人转载的权利，任何人需要转载好奇心日报网站的文章，必</p>
+                        <p>须征得好奇心日报网站的同意并授权。</p>
+                        <p>8)免责条款</p>
+                        <p>好奇心日报网站对因卫星传输线路、电信部门及网络服务提供商等任何原因造成的信息传递异常情况</p>
+                        <p>所至后果不承担法律责任，但有义务积极协助电信部门、网络服务提供商使之恢复正常。用户应始终</p>
+                        <p>避免并消除由于上述原因造成的信息遗漏、错误、丢失、延迟、中断等可能给第好奇心日报带来不利</p>
+                        <p>影响的因素，使其免受经济损失和名誉损失，不得因本合同关系而以上述缘由向好奇心日报网站提出</p>
+                        <p>索赔。此外，由于地震、台风、战争、罢工、政府行为、瘟疫、爆发性和流行性传染病或其他重大疫</p>
+                        <p>情、非因各方原因造成的火灾、基础电信网络中断造成的及其它各方不能预见并且对其发生后果不能</p>
+                        <p>预防或避免的不可抗力原因，致使相关服务中断，好奇心日报网站不承担由此产生的损失，但应及时</p>
+                        <p>通知服务中断原因，并积极加以解决。</p>
+                        <p>9)特别声明</p>
+                        <p id="copyright">未经好奇心日报网站书面同意，任何用户或网站不允许以任何理由和方式将好奇心日报网站的内容进</p>
+                        <p>行再传播。</p>
+                    </div>
+                </div>
+                <div class="out_fit next_2">
+                    <p class="top_p">版权声明</p>
+                    <div class="all_content" style="padding-top: 30px">
+                        <p>北京酷睿奥思科技发展有限公司（以下简称“酷睿奥思”）下属《好奇心日报》网站、应用等传播媒体</p>
+                        <p>刊载，包括但不限于文字、图片、音频、视频、图表、标志、标识、广告、版面设计、专栏目录与名</p>
+                        <p>称、内容分类标准，以及为用户提供的所有信息，均受中国著作权法和国际公约的保护。</p>
+                        <p>未经《好奇心日报》授权，任何单位、组织和个人均不得转载、摘编或者采取其他任何方式使用上述</p>
+                        <p id="privacy">作品；已经《好奇心日报》授权的，应当在授权范围内使用，并注明来源。违反上述声明对酷睿奥思</p>
+                        <p>合法权益造成侵害的，酷睿奥思将依法追究其法律责任。</p>
+                    </div>
+                </div>
+                <div class="out_fit next_2">
+                    <p class="top_p">隐私条款</p>
+                    <div class="all_content" style="padding-top: 20px">
+                        <p>好奇心日报是北京酷睿奥思科技发展有限公司旗下运营主体，包括但不限于好奇心日报网站、好奇心</p>
+                        <p>日报客户端等，以下简称“好奇心日报”。</p>
+                        <p>鉴于网络的特性，好奇心日报将无可避免地与您产生直接或间接的互动关系，故特此说明我们对用户</p>
+                        <p>个人信息所采取的收集、使用和保护政策，本《个人信息保护政策》适用于好奇心日报各平台向您提</p>
+                        <p>供的所有服务。请您务必仔细阅读，如您对本《个人信息保护政策》有任何疑问，您可以将您的问题</p>
+                        <p>发送至feedback@qdaily.com，我们会及时解决您的问题。</p>
+                        <br>
+                        <p>本《个人信息保护政策》包括了以下几个方面的问题：</p>
+                        <p>一、我们可能收集的信息</p>
+                        <p>二、我们如何使用信息</p>
+                        <p>三、我们如何保留、储存和保护信息</p>
+                        <p>四、我们如何管理您的信息</p>
+                        <p>五、第三方服务</p>
+                        <p>六、我们可能向您发送的邮件和信息</p>
+                        <p>七、未成年人使用我们的服务</p>
+                        <p>八、通知和修订</p>
+                        <h3>一、我们可能收集的信息</h3>
+                        <p>1.与个人身份无关的信息：</p>
+                        <p>当您使用好奇心日报服务时，我们可能收集和汇总诸如用户的来源途径、访问顺序等信息，例如记录</p>
+                        <p>使用好奇心日报的每个用户的来源途径、浏览器软件等。</p>
+                        <p>2.有关个人身份的信息：</p>
+                        <p>当您使用好奇心日报服务时，我们可能收集和汇总或要求您提供有关个人身份的信息，例如姓名、性</p>
+                        <p>别、年龄、个人电话号码；网络身份标识信息（包括系统账号、IP地址、电子邮箱地址及与前述有关</p>
+                        <p>的密码、口令、口令保护答案等）；通讯信息；个人上网记录和日志信息（包括网站浏览记录、软件</p>
+                        <p>使用记录、点击记录、操作日志以及您在好奇心日报自主发布的图片、评论等）；设备信息（包括设</p>
+                        <p>备型号、设备MAC地址、操作系统类型、设备设置）；软件列表唯一设备识别码（如IMEI/android </p>
+                        <p>ID/IDFA/OPENUDID/GUID、SIM卡IMSI信息等在内的描述个人常用设备基本情况的信息）。</p>
+                        <h3>二、我们如何使用信息</h3>
+                        <p>好奇心日报可能将所收集的信息用作如下用途：</p>
+                        <p>1 向您提供服务；</p>
+                        <p>2 帮助好奇心日报产品及服务的设计、优化和升级；</p>
+                        <p>3 向您提供个性化服务，例如向您展示、推送与您更加相关的内容和广告；</p>
+                        <p>4 用于身份验证、安全防范、存档和备份，确保服务的安全性。</p>
+                        <p>5.让您参与有关我们产品和服务的调查。</p>
+                        <h3>三、我们如何保留、储存和保护信息</h3>
+                        <p>好奇心日报将对您的个人信息做符合行业标准的加密存储，并采取同样加密方式的异地备份，防止您</p>
+                        <p>的个人信息丢失、被盗用或遭篡改。好奇心日报将采取周期性的扫描、定期的渗透测试服务等技术措</p>
+                        <p>施保障服务的安全可靠。</p>
+                        <p>好奇心日报会严格按照国家法律法规对您的个人信息进行管理及保护。但请您理解，可能存在黑客政</p>
+                        <p>击、计算机病毒侵入或发作、政府管制等影响信息安全的不可抗力因素。</p>
+                        <h3>四、我们如何管理您的信息</h3>
+                        <p>我们将尽一切可能采取适当的技术手段，保证您可以访问、更新和更正自己的注册信息或使用我们的</p>
+                        <p>服务时提供的其他个人信息。在访问、更新、更正和删除前述信息时，我们可能会要求您进行身份验</p>
+                        <p>证，以保障账户安全。</p>
+                        <h3>五、第三方服务</h3>
+                        <p>好奇心日报可能链接至第三方提供的社交媒体或其他服务（包括网站或其他服务形式）。包括：</p>
+                        <p>1.您可利用“分享”键将某些内容分享到第三方服务，或您可利用第三方服务登录好奇心日报服务。这</p>
+                        <p>些功能可能会收集您的信息（包括您的日志信息），并可能在您的电脑装置COOKIES，从而正常运</p>
+                        <p>行上述功能；</p>
+                        <p>2.我们通过广告或我们服务的其他方式向您提供链接，使您可以接入第三方的服务或网站；</p>
+                        <p>3.其他接入第三方服务的情形。</p>
+                        <h3>六、我们可能向您发送的邮件和信息</h3>
+                        <p>邮件和信息推送：您在使用我们的服务时，我们可能使用您的信息向您的设备发送电子邮件、新闻或</p>
+                        <p>推送通知。如您不希望收到这些信息，可以按照我们的相关提示，在设备上选择取消订阅。</p>
+                        <p>与服务有关的公告：我们可能在必要时（例如因系统维护而暂停某一项服务时）向您发出与服务有关</p>
+                        <p>的公告。您可能无法取消这些与服务有关、性质不属于推广的公告。</p>
+                        <h3>七、未成年人使用我们的服务</h3>
+                        <p>建议未成年人在使用好奇心日报提供的服务前应取得监护人的同意。好奇心日报将按照国家相关法律</p>
+                        <p>法规及本《个人信息保护政策》保护未成年人个人信息的保密性及安全性。</p>
+                        <h3>八、通知和修订</h3>
+                        <p>我们可能适时修订本《隐私政策》的条款，该等修订构成本《隐私政策》的一部分。如该等修订造成</p>
+                        <p>您在本《隐私政策》下权利的实质减少，我们将在修订生效前通过在主页上显著位置提示或向您发送</p>
+                        <p>电子邮件或以其他方式通知您。在该种情况下，若您继续使用我们的服务，即表示同意受经修订的本</p>
+                        <p>《隐私政策》的约束。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="same_bottom">
+            <div class="s_b_top">
+                <div class="many_ul">
+                    <ul>
+                        <li>
+                            <a href="index.html" target="_blank">
+                                首页
+                            </a>
+                        </li>
+                        <li>
+                            <a href="long_article.html" target="_blank">
+                                长文章
+                            </a>
+                        </li>
+                        <li>
+                            <a href="Top 15.html" target="_blank">
+                                TOP 15
+                            </a>
+                        </li>
+                        <li>
+                            <a href="picture.html" target="_blank">
+                                10 个图
+                            </a>
+                        </li>
+                        <li>
+                            <a href="research.html" target="_blank">
+                                好奇心研究所
+                            </a>
+                        </li>
+                        <li>
+                            <a href="column.html" target="_blank">
+                                100个有想法的人
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                Medium
+                            </a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="big_company.html" target="_blank">
+                                大公司头条
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                Q Business
+                            </a>
+                        </li>
+                        <li>
+                            <a href="column.html" target="_blank">
+                                今日应用
+                            </a>
+                        </li>
+                        <li>
+                            <a href="column.html" target="_blank">
+                                这世界
+                            </a>
+                        </li>
+                        <li>
+                            <a href="best_on_the_web.html" target="_blank">
+                                Best on the web
+                            </a>
+                        </li>
+                        <li>
+                            <a href="business.html" target="_blank">
+                                商业
+                            </a>
+                        </li>
+                        <li>
+                            <a href="magic.html" target="_blank">
+                                智能
+                            </a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="design.html" target="_blank">
+                                设计
+                            </a>
+                        </li>
+                        <li>
+                            <a href="fashion.html" target="_blank">
+                                时尚
+                            </a>
+                        </li>
+                        <li>
+                            <a href="happiness.html" target="_blank">
+                                娱乐
+                            </a>
+                        </li>
+                        <li>
+                            <a href="city.html" target="_blank">
+                                城市
+                            </a>
+                        </li>
+                        <li>
+                            <a href="game.html" target="_blank">
+                                游戏
+                            </a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="app.html" target="_blank">
+                                下载APP
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" class="login_img">
+                                登录 / 注册
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                订阅
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://weibo.com/qdaily" target="_blank">
+                                微博
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" class="show_a">
+                                微信
+                                <div class="wei_xin_bottom">
+                                    <div id="weixin_code"></div>
+                                    <p class="code_word">好奇心微信公众号</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="use_ agreement.html">
+                                用户协议
+                            </a>
+                        </li>
+                        <li>
+                            <a href="use_ agreement.html#privacy">
+                                隐私政策
+                            </a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="app.html" target="_blank">
+                                关于好奇心
+                            </a>
+                        </li>
+                        <li>
+                            <a href="app.html" target="_blank">
+                                联系我们
+                            </a>
+                        </li>
+                        <li>
+                            <a href="app.html" target="_blank">
+                                工作机会
+                            </a>
+                        </li>
+                        <li>
+                            <a href="use_ agreement.html#copyright">
+                                版权声明
+                            </a>
+                        </li>
+                    </ul>
+                    <form action="/searches" target="_blank" class="search_form">
+                        <input type="text">
+                        <span>
+                            <i class="iconfont">&#xe6fe;</i>
+                        </span>
+                    </form>
+                </div>
+            </div>
+            <div class="s_b_bottom">
+                <div class="power_right">
+                    <div class="right_img">
+                        <img src="http://p5w1f51o8.bkt.clouddn.com/logo.png">
+                    </div>
+                    <div class="right_word">
+                        <p>2014 北京酷睿奥思科技发展有限公司</p>
+                        <p>京ICP备14027177号-1</p>
+                        <span>
+                            <img src="http://p5w1f51o8.bkt.clouddn.com/Police.png">
+                        </span>
+                        <p>京公网安备 11010502030071号</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../js/same.js"></script>
+    <script src="../js/research.js"></script>
+</body>
+
+</html>

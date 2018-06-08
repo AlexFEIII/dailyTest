@@ -1,0 +1,1198 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <link rel="shortcut icon" href="http://p5w1f51o8.bkt.clouddn.com/favicon.ico" type="image/x-icon"/>
+    <link rel="stylesheet" href="fonts/font.css"/>
+    <link rel="stylesheet" href="css/same.css"/>
+    <link rel="stylesheet" href="css/index.css"/>
+    <title>好奇心日报_好奇驱使你的世界_Qdaily</title>
+    <script src="js/jQuery.js"></script>
+    <script src="js/jcanvas.min.js"></script>
+    <script src="js/jquery.qrcode.js"></script>
+</head>
+
+<body>
+    <div id="box">
+        <div class="nav">
+            <div class="left">
+                <div class="div_a">
+                    <a id="logo_content" href="index.html">
+                        <img src="http://p5w1f51o8.bkt.clouddn.com/logo.png" id="logo"/>
+                    </a>
+                    <a id="logo_box" href="index.html">
+                        <img src="http://p5w1f51o8.bkt.clouddn.com/curious.jpg" id="logo_bottom"/>
+                    </a>
+                </div>
+                <ul id="item_left">
+                    <li>
+                        <a href="research.html" target="_blank">
+                            <span class="span_icon1">
+                                <i class="iconfont">&#xe64a;</i>
+                            </span>
+                            <p>好奇心研究所</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="column.html" target="_blank">
+                            <span class="span_icon2">
+                                <i class="iconfont">&#xe6f9;</i>
+                            </span>
+                            <p>栏目中心</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="middle">
+                <ul id="middle_item">
+                    <li>
+                        <a href="long_article.html" target="_blank">
+                            长文章
+                        </a>
+                    </li>
+                    <li>
+                        <a href="picture.html" target="_blank">
+                            10 个图
+                        </a>
+                    </li>
+                    <li>
+                        <a href="Top 15.html" target="_blank">
+                            Top 15
+                        </a>
+                    </li>
+                    <li>
+                        <a href="business.html" target="_blank">
+                            商业
+                        </a>
+                    </li>
+                    <li>
+                        <a href="magic.html" target="_blank">
+                            智能
+                        </a>
+                    </li>
+                    <li>
+                        <a href="design.html" target="_blank">
+                            设计
+                        </a>
+                    </li>
+                    <li>
+                        <a href="fashion.html" target="_blank">
+                            时尚
+                        </a>
+                    </li>
+                    <li>
+                        <a href="happiness.html" target="_blank">
+                            娱乐
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" id="last_icon">
+                            全部分类
+                            <i class="iconfont down">&#xe601;</i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="right">
+                <div class="app">
+                    <a href="app.html" id="app_a" target="_blank">
+                        APP
+                    </a>
+                </div>
+                <div class="icon_s">
+                    <a href="javascript:;" class="search">
+                        <i class="iconfont">&#xe6fe;</i>
+                    </a>
+                </div>
+                <div class="about_us">
+                    <span class="login">
+                        <a href="javascript:;" class="login_img">
+                            <img src="http://p5w1f51o8.bkt.clouddn.com/login.png"/>
+                        </a>
+                        <a href="javascript:;" id="showNickname" class="login_img">
+                            登录
+                        </a>
+                    </span>
+                    <span>
+                        <a href="app.html" target="_blank">
+                            关于我们
+                        </a>
+                    </span>
+                    <span>
+                        <a href="http://weibo.com/qdaily" class="icon_a" target="_blank">
+                            <i class="iconfont">&#xe65a;</i>
+                        </a>
+                    </span>
+                    <span>
+                        <a href="javascript:;" class="icon_a">
+                            <i class="iconfont">&#xe69a;</i>
+                            <div class="weixin_box">
+                                <div id="QR_Code"></div>
+                                <p id="number">好奇心微信公众号</p>
+                            </div>
+                        </a>
+                    </span>
+                </div>
+            </div>
+            <div class="page_nav">
+                <ul id="page_ul">
+                    <li>
+                        <a href="long_article.html" target="_blank">
+                            <span>
+                                <i class="iconfont">&#xe61c;</i>
+                            </span>
+                            <p>
+                                长文章
+                            </p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="picture.html" target="_blank">
+                            <span>
+                                <i class="iconfont">&#xe61c;</i>
+                            </span>
+                            <p>
+                                10 个图
+                            </p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="Top 15.html" target="_blank">
+                            <span>
+                                <i class="iconfont">&#xe61c;</i>
+                            </span>
+                            <p>
+                                Top 15
+                            </p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="business.html" target="_blank">
+                            <span>
+                                <i class="iconfont">&#xe61c;</i>
+                            </span>
+                            <p>
+                                商业
+                            </p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="magic.html" target="_blank">
+                            <span>
+                                <i class="iconfont">&#xe61c;</i>
+                            </span>
+                            <p>
+                                智能
+                            </p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="design.html" target="_blank">
+                            <span>
+                                <i class="iconfont">&#xe61c;</i>
+                            </span>
+                            <p>
+                                设计
+                            </p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="fashion.html" target="_blank">
+                            <span>
+                                <i class="iconfont">&#xe61c;</i>
+                            </span>
+                            <p>
+                                时尚
+                            </p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="happiness.html" target="_blank">
+                            <span>
+                                <i class="iconfont">&#xe61c;</i>
+                            </span>
+                            <p>
+                                娱乐
+                            </p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="city.html" target="_blank">
+                            <span>
+                                <i class="iconfont">&#xe61c;</i>
+                            </span>
+                            <p>
+                                城市
+                            </p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="game.html" target="_blank">
+                            <span>
+                                <i class="iconfont">&#xe61c;</i>
+                            </span>
+                            <p>
+                                游戏
+                            </p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="content_main">
+            <div class="outside_div">
+                <div class="max_box">
+                    <div class="article_max">
+                        <ul id="scroll_banner">
+                            <li>
+                                <a href="javascript:;">
+                                    <img src="http://p5w1f51o8.bkt.clouddn.com/banner1.jpg"/>
+                                    <div class="banner_title">
+                                        <p>智能</p>
+                                        <h3>
+                                            <span class="line">扎克伯格写了道歉信、市值一度蒸发 573 亿美元</span>
+                                            <span class="line">，Facebook 的大麻烦到底是怎么回事？</span>
+                                        </h3>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">
+                                    <img src="http://p5w1f51o8.bkt.clouddn.com/banner2.jpg"/>
+                                    <div class="banner_title">
+                                        <p>城市</p>
+                                        <h3>
+                                            <span class="line">学者唐世平：自信和骄傲的时候，我们如何清醒地认</span>
+                                            <span class="line">识世界对我们的评价？</span>
+                                        </h3>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">
+                                    <img src="http://p5w1f51o8.bkt.clouddn.com/banner3.jpg"/>
+                                    <div class="banner_title">
+                                        <p>娱乐</p>
+                                        <h3>
+                                            <span class="line">漫画家朱德庸：创作者要保持单纯的生活，以及，人</span>
+                                            <span class="line">们应当学会掌控自己</span>
+                                        </h3>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">
+                                    <img src="http://p5w1f51o8.bkt.clouddn.com/banner6.jpg"/>
+                                    <div class="banner_title">
+                                        <p>智能</p>
+                                        <h3>
+                                            <span class="line">亚马逊市值超过了 Google，对它的恐惧也蔓延到各行</span>
+                                            <span class="line">各业</span>
+                                        </h3>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">
+                                    <img src="http://p5w1f51o8.bkt.clouddn.com/banner7.jpg"/>
+                                    <div class="banner_title">
+                                        <p>城市</p>
+                                        <h3>
+                                            <span class="line">五位英国作家，数十位中国翻译家，大英图书馆在上</span>
+                                            <span class="line">海的手稿展值得一看</span>
+                                        </h3>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                        <a class='pre  arrow' href="javascript:;">
+                            <i class="iconfont">&#xe749;</i>
+                        </a>
+                        <a class='next arrow' href="javascript:;">
+                            <i class="iconfont">&#xe74e;</i>
+                        </a>
+                        <ul id="nav_circle">
+                            <li class="cur"></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                    <div class="z_min_middle">
+                        <div class="article_middle">
+                            <div class="save_img">
+                                <canvas id="pentagon" width="250" height="210"></canvas>
+                                <a href="javascript:;" class="login_img">
+                                    <img src="http://p5w1f51o8.bkt.clouddn.com/login.png"/>
+                                </a>
+                            </div>
+                            <a href="javascript:;" class="login_img">登录</a>
+                            <p>登录查看你的好奇心指数</p>
+                        </div>
+                        <div class="article_min">
+                            <a href="app.html" target="_blank">
+                                <img src="http://p5w1f51o8.bkt.clouddn.com/app.jpg"/>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="same" style="opacity:1">
+                        <a href="javascript:;" class="same_top_a">
+                            <p class="top_kind">
+                                <span>
+                                    <i class="iconfont">&#xe61c;</i>
+                                </span>
+                                城市
+                            </p>
+                            <div class="same_top">
+                                <img src="http://img.qdaily.com/article/article_show/20180425104622U301OVoFwblYKCAD.jpg?imageMogr2/auto-orient/thumbnail/!245x185r/gravity/Center/crop/245x185/quality/85/format/jpg/ignore-error/1"
+                                    class="role_im"/>
+                            </div>
+                            <div class="same_middle">
+                                <p>看图：这里是过去24小时内发生的重要的事</p>
+                            </div>
+                            <div class="same_bottom_div">
+                                <p>4小时前</p>
+                                <div class="big_manage">
+                                    <div class="comment">
+                                        <span>
+                                            <i class="iconfont">&#xe60f;</i>
+                                            11
+                                        </span>
+                                    </div>
+                                    <div class="likes">
+                                        <span>
+                                            <i class="iconfont">&#xe630;</i>
+                                            25
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="min_banner" style="opacity:1">
+                        <a href="javascript:;" class="same_top_a">
+                            <p class="top_kind">
+                                <span>
+                                    <i class="iconfont">&#xe61c;</i>
+                                </span>
+                                智能
+                            </p>
+                            <div class="same_top">
+                                <img src="http://img.qdaily.com/article/article_show/20180328171859WFJrNKEzQS9giqat.jpg?imageMogr2/auto-orient/thumbnail/!500x280r/gravity/Center/crop/500x280/quality/85/format/jpg/ignore-error/1"
+                                    class="role_im"/>
+                            </div>
+                            <div class="same_middle">
+                                <p class="alive">
+                                    <span>到底是否存在另一个地球？NASA 4 月会再发射一个</span>
+                                    <span>航天器研究这个问题</span>
+                                </p>
+                            </div>
+                            <div class="same_bottom_div">
+                                <p>7小时前</p>
+                                <div class="big_manage">
+                                    <div class="comment">
+                                        <span>
+                                            <i class="iconfont">&#xe60f;</i>
+                                            6
+                                        </span>
+                                    </div>
+                                    <div class="likes">
+                                        <span>
+                                            <i class="iconfont">&#xe630;</i>
+                                            29
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="same" style="opacity:1">
+                        <a href="javascript:;" class="same_top_a">
+                            <p class="top_kind">
+                                <span>
+                                    <i class="iconfont">&#xe61c;</i>
+                                </span>
+                                城市
+                            </p>
+                            <div class="same_top">
+                                <img src="http://img.qdaily.com/article/article_show/20180330201743oenWjfG1wzUIOCK0.jpg?imageMogr2/auto-orient/thumbnail/!245x185r/gravity/Center/crop/245x185/quality/85/format/jpg/ignore-error/1"
+                                    class="role_im"/>
+                            </div>
+                            <div class="same_middle">
+                                <p>伪赋能，不用失败也能轻松体验「没可能」 | 好奇心辞典</p>
+                            </div>
+                            <div class="same_bottom_div">
+                                <p>7小时前</p>
+                                <div class="big_manage">
+                                    <div class="comment">
+                                        <span>
+                                            <i class="iconfont">&#xe60f;</i>
+                                            15
+                                        </span>
+                                    </div>
+                                    <div class="likes">
+                                        <span>
+                                            <i class="iconfont">&#xe630;</i>
+                                            56
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="middle_banner" style="opacity:1">
+                        <a href="javascript:;" class="same_top_a guess_a">
+                            <div class="same_top wine">
+                                <img src="http://img.qdaily.com/paper/paper_show/20180323174040X5KlemyTHba8Pivw.jpg?imageMogr2/auto-orient/thumbnail/!500x280r/gravity/Center/crop/500x280/quality/85/format/jpg/ignore-error/1"
+                                    class="role_im"/>
+                                <span>
+                                    <img src="http://p5w1f51o8.bkt.clouddn.com/guess.jpg"/>
+                                </span>
+                            </div>
+                            <div class="opacity_div">
+                                <span>JOIN
+                                    <canvas class="can_join" width="80" height="50"></canvas>
+                                </span>
+                                <span>NEW</span>
+                            </div>
+                            <div class="cover_div">
+                                <p>Slogan 无奖竞猜，你的品牌知识储备够用吗？</p>
+                                <p>口号叫得响记得起的都有哪些？</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="Square" style="opacity:1">
+                        <a href="../html/house.html" target="_blank">
+                            <img src="http://p5w1f51o8.bkt.clouddn.com/house_and_life2.png"/>
+                        </a>
+                    </div>
+                    <div class="same" style="opacity:1">
+                        <a href="javascript:;" class="same_top_a">
+                            <p class="top_kind">
+                                <span>
+                                    <i class="iconfont">&#xe61c;</i>
+                                </span>
+                                城市
+                            </p>
+                            <div class="same_top">
+                                <img src="http://img.qdaily.com/article/article_show/20180426092640Xo1yBNkSesLWhTG9.png?imageMogr2/auto-orient/thumbnail/!245x185r/gravity/Center/crop/245x185/quality/85/format/jpg/ignore-error/1"
+                                    class="role_im"/>
+                            </div>
+                            <div class="same_middle">
+                                <p>Gmail 大改版，在邮箱里能做的事情更多了</p>
+                            </div>
+                            <div class="same_bottom_div">
+                                <p>7小时前</p>
+                                <div class="big_manage">
+                                    <div class="comment">
+                                        <span>
+                                            <i class="iconfont">&#xe60f;</i>
+                                            14
+                                        </span>
+                                    </div>
+                                    <div class="likes">
+                                        <span>
+                                            <i class="iconfont">&#xe630;</i>
+                                            43
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="same" style="opacity:1">
+                        <a href="javascript:;" class="same_top_a">
+                            <p class="top_kind">
+                                <span>
+                                    <i class="iconfont">&#xe61c;</i>
+                                </span>
+                                城市
+                            </p>
+                            <div class="same_top">
+                                <img src="http://img.qdaily.com/article/article_show/20180426144426fobTWseIcSPJuHMk.jpg?imageMogr2/auto-orient/thumbnail/!245x185r/gravity/Center/crop/245x185/quality/85/format/jpg/ignore-error/1"
+                                    class="role_im"/>
+                            </div>
+                            <div class="same_middle">
+                                <p>乔治马丁说今年《冰与火之歌》有新书，但不是第六卷</p>
+                            </div>
+                            <div class="same_bottom_div">
+                                <p>7小时前</p>
+                                <div class="big_manage">
+                                    <div class="comment">
+                                        <span>
+                                            <i class="iconfont">&#xe60f;</i>
+                                            14
+                                        </span>
+                                    </div>
+                                    <div class="likes">
+                                        <span>
+                                            <i class="iconfont">&#xe630;</i>
+                                            43
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="same" style="opacity:1">
+                        <a href="javascript:;" class="same_top_a">
+                            <p class="top_kind">
+                                <span>
+                                    <i class="iconfont">&#xe61c;</i>
+                                </span>
+                                城市
+                            </p>
+                            <div class="same_top">
+                                <img src="http://img.qdaily.com/article/article_show/201804261507300yU3ZLrM6Pvn9YIA.jpg?imageMogr2/auto-orient/thumbnail/!245x185r/gravity/Center/crop/245x185/quality/85/format/jpg/ignore-error/1"
+                                    class="role_im"/>
+                            </div>
+                            <div class="same_middle">
+                                <p>福特北美停止投资轿车，将开发一款新的跨界车型</p>
+                            </div>
+                            <div class="same_bottom_div">
+                                <p>7小时前</p>
+                                <div class="big_manage">
+                                    <div class="comment">
+                                        <span>
+                                            <i class="iconfont">&#xe60f;</i>
+                                            14
+                                        </span>
+                                    </div>
+                                    <div class="likes">
+                                        <span>
+                                            <i class="iconfont">&#xe630;</i>
+                                            43
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="same" style="opacity:1">
+                        <a href="javascript:;" class="same_top_a">
+                            <p class="top_kind">
+                                <span>
+                                    <i class="iconfont">&#xe61c;</i>
+                                </span>
+                                城市
+                            </p>
+                            <div class="same_top">
+                                <img src="http://img.qdaily.com/article/article_show/20180426133907o7cZH1tFTQri40uU.gif?imageMogr2/auto-orient/thumbnail/!245x185r/gravity/Center/crop/245x185/quality/85/ignore-error/1"
+                                    class="role_im"/>
+                            </div>
+                            <div class="same_middle">
+                                <p>「这世界」娃娃臀部太翘，在巴西成了一个社会问题</p>
+                            </div>
+                            <div class="same_bottom_div">
+                                <p>7小时前</p>
+                                <div class="big_manage">
+                                    <div class="comment">
+                                        <span>
+                                            <i class="iconfont">&#xe60f;</i>
+                                            14
+                                        </span>
+                                    </div>
+                                    <div class="likes">
+                                        <span>
+                                            <i class="iconfont">&#xe630;</i>
+                                            43
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="same" style="opacity:1">
+                        <a href="javascript:;" class="same_top_a">
+                            <p class="top_kind">
+                                <span>
+                                    <i class="iconfont">&#xe61c;</i>
+                                </span>
+                                城市
+                            </p>
+                            <div class="same_top">
+                                <img src="http://img.qdaily.com/article/article_show/20180425084950wMDpHOv21zjUEb0l.jpeg?imageMogr2/auto-orient/thumbnail/!245x185r/gravity/Center/crop/245x185/quality/85/format/jpg/ignore-error/1"
+                                    class="role_im"/>
+                            </div>
+                            <div class="same_middle">
+                                <p>易卜生的《海达·高布乐》，由日本剧团演绎的版本 5 月开演</p>
+                            </div>
+                            <div class="same_bottom_div">
+                                <p>7小时前</p>
+                                <div class="big_manage">
+                                    <div class="comment">
+                                        <span>
+                                            <i class="iconfont">&#xe60f;</i>
+                                            14
+                                        </span>
+                                    </div>
+                                    <div class="likes">
+                                        <span>
+                                            <i class="iconfont">&#xe630;</i>
+                                            43
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="same" style="opacity:1">
+                        <a href="javascript:;" class="same_top_a">
+                            <p class="top_kind">
+                                <span>
+                                    <i class="iconfont">&#xe61c;</i>
+                                </span>
+                                城市
+                            </p>
+                            <div class="same_top">
+                                <img src="http://img.qdaily.com/article/article_show/20180425160058FRLStwXE5r7msPjN.jpg?imageMogr2/auto-orient/thumbnail/!245x185r/gravity/Center/crop/245x185/quality/85/format/jpg/ignore-error/1"
+                                    class="role_im"/>
+                            </div>
+                            <div class="same_middle">
+                                <p>卫星新闻 | 成都街头艺人被要求“持证上岗”，合格者不到三成</p>
+                            </div>
+                            <div class="same_bottom_div">
+                                <p>7小时前</p>
+                                <div class="big_manage">
+                                    <div class="comment">
+                                        <span>
+                                            <i class="iconfont">&#xe60f;</i>
+                                            14
+                                        </span>
+                                    </div>
+                                    <div class="likes">
+                                        <span>
+                                            <i class="iconfont">&#xe630;</i>
+                                            43
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="min_banner" style="opacity:1">
+                        <a href="javascript:;" class="same_top_a">
+                            <p class="top_kind">
+                                <span>
+                                    <i class="iconfont">&#xe61c;</i>
+                                </span>
+                                智能
+                            </p>
+                            <div class="same_top">
+                                <img src="http://img.qdaily.com/article/article_show/20180426125838wmGvySONsWP4EDqT.png?imageMogr2/auto-orient/thumbnail/!500x185r/gravity/Center/crop/500x185/quality/85/format/jpg/ignore-error/1"
+                                    class="role_im"/>
+                            </div>
+                            <div class="same_middle">
+                                <p class="alive">
+                                    <span>Converse CMO 跳槽 Supreme，以及，荷兰出了一</span>
+                                    <span>款口香糖球鞋 | 浮华日报</span>
+                                </p>
+                            </div>
+                            <div class="same_bottom_div">
+                                <p>7小时前</p>
+                                <div class="big_manage">
+                                    <div class="comment">
+                                        <span>
+                                            <i class="iconfont">&#xe60f;</i>
+                                            6
+                                        </span>
+                                    </div>
+                                    <div class="likes">
+                                        <span>
+                                            <i class="iconfont">&#xe630;</i>
+                                            29
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="same" style="opacity:1">
+                        <a href="javascript:;" class="same_top_a">
+                            <p class="top_kind">
+                                <span>
+                                    <i class="iconfont">&#xe61c;</i>
+                                </span>
+                                城市
+                            </p>
+                            <div class="same_top">
+                                <img src="http://img.qdaily.com/article/article_show/201804260751175EDw6p9XMdBqPF7g.jpg?imageMogr2/auto-orient/thumbnail/!245x185r/gravity/Center/crop/245x185/quality/85/format/jpg/ignore-error/1"
+                                    class="role_im"/>
+                            </div>
+                            <div class="same_middle">
+                                <p>消费者对维多利亚的秘密评价创新低，品牌调整在即</p>
+                            </div>
+                            <div class="same_bottom_div">
+                                <p>7小时前</p>
+                                <div class="big_manage">
+                                    <div class="comment">
+                                        <span>
+                                            <i class="iconfont">&#xe60f;</i>
+                                            14
+                                        </span>
+                                    </div>
+                                    <div class="likes">
+                                        <span>
+                                            <i class="iconfont">&#xe630;</i>
+                                            43
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="same" style="opacity:1">
+                        <a href="javascript:;" class="same_top_a">
+                            <p class="top_kind">
+                                <span>
+                                    <i class="iconfont">&#xe61c;</i>
+                                </span>
+                                城市
+                            </p>
+                            <div class="same_top">
+                                <img src="http://img.qdaily.com/article/article_show/201804261001133zr6pTDKhXP7oUMb.jpg?imageMogr2/auto-orient/thumbnail/!245x185r/gravity/Center/crop/245x185/quality/85/format/jpg/ignore-error/1"
+                                    class="role_im"/>
+                            </div>
+                            <div class="same_middle">
+                                <p>华为也被美国司法部调查，关联企业股价应声而跌</p>
+                            </div>
+                            <div class="same_bottom_div">
+                                <p>7小时前</p>
+                                <div class="big_manage">
+                                    <div class="comment">
+                                        <span>
+                                            <i class="iconfont">&#xe60f;</i>
+                                            14
+                                        </span>
+                                    </div>
+                                    <div class="likes">
+                                        <span>
+                                            <i class="iconfont">&#xe630;</i>
+                                            43
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="same" style="opacity:1">
+                        <a href="javascript:;" class="same_top_a">
+                            <p class="top_kind">
+                                <span>
+                                    <i class="iconfont">&#xe61c;</i>
+                                </span>
+                                城市
+                            </p>
+                            <div class="same_top">
+                                <img src="http://img.qdaily.com/article/article_show/20180426092037BXf72kJG4ZRWocMI.jpg?imageMogr2/auto-orient/thumbnail/!245x185r/gravity/Center/crop/245x185/quality/85/format/jpg/ignore-error/1"
+                                    class="role_im"/>
+                            </div>
+                            <div class="same_middle">
+                                <p>Costa 要被拆分成独立公司，但这还是不够快</p>
+                            </div>
+                            <div class="same_bottom_div">
+                                <p>7小时前</p>
+                                <div class="big_manage">
+                                    <div class="comment">
+                                        <span>
+                                            <i class="iconfont">&#xe60f;</i>
+                                            14
+                                        </span>
+                                    </div>
+                                    <div class="likes">
+                                        <span>
+                                            <i class="iconfont">&#xe630;</i>
+                                            43
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="same" style="opacity:1">
+                        <a href="javascript:;" class="same_top_a">
+                            <p class="top_kind">
+                                <span>
+                                    <i class="iconfont">&#xe61c;</i>
+                                </span>
+                                城市
+                            </p>
+                            <div class="same_top">
+                                <img src="http://img.qdaily.com/article/article_show/20180426091905pnfPqxXaFe6j2Zbs.jpg?imageMogr2/auto-orient/thumbnail/!245x185r/gravity/Center/crop/245x185/quality/85/format/jpg/ignore-error/1"
+                                    class="role_im"/>
+                            </div>
+                            <div class="same_middle">
+                                <p>为缓解程序员压力，中国初创公司招聘美女“程序员鼓励师”</p>
+                            </div>
+                            <div class="same_bottom_div">
+                                <p>7小时前</p>
+                                <div class="big_manage">
+                                    <div class="comment">
+                                        <span>
+                                            <i class="iconfont">&#xe60f;</i>
+                                            14
+                                        </span>
+                                    </div>
+                                    <div class="likes">
+                                        <span>
+                                            <i class="iconfont">&#xe630;</i>
+                                            43
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="same" style="opacity:1">
+                        <a href="javascript:;" class="same_top_a">
+                            <p class="top_kind">
+                                <span>
+                                    <i class="iconfont">&#xe61c;</i>
+                                </span>
+                                城市
+                            </p>
+                            <div class="same_top">
+                                <img src="http://img.qdaily.com/article/article_show/20180426114713ZsTSyel7Ar3W9YgN.jpg?imageMogr2/auto-orient/thumbnail/!245x185r/gravity/Center/crop/245x185/quality/85/format/jpg/ignore-error/1"
+                                    class="role_im"/>
+                            </div>
+                            <div class="same_middle">
+                                <p>星巴克上线录音星礼卡，汉堡王扒出麦当劳高管旧宅照片 | 乙... </p>
+                            </div>
+                            <div class="same_bottom_div">
+                                <p>7小时前</p>
+                                <div class="big_manage">
+                                    <div class="comment">
+                                        <span>
+                                            <i class="iconfont">&#xe60f;</i>
+                                            14
+                                        </span>
+                                    </div>
+                                    <div class="likes">
+                                        <span>
+                                            <i class="iconfont">&#xe630;</i>
+                                            43
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="same" style="opacity:1">
+                        <a href="javascript:;" class="same_top_a">
+                            <p class="top_kind">
+                                <span>
+                                    <i class="iconfont">&#xe61c;</i>
+                                </span>
+                                城市
+                            </p>
+                            <div class="same_top">
+                                <img src="http://img.qdaily.com/article/article_show/201804261107344ZV8JfiH5Mv1yu0x.jpg?imageMogr2/auto-orient/thumbnail/!245x185r/gravity/Center/crop/245x185/quality/85/format/jpg/ignore-error/1"
+                                    class="role_im"/>
+                            </div>
+                            <div class="same_middle">
+                                <p>看图：这里是过去24小时内发生的重要的事</p>
+                            </div>
+                            <div class="same_bottom_div">
+                                <p>7小时前</p>
+                                <div class="big_manage">
+                                    <div class="comment">
+                                        <span>
+                                            <i class="iconfont">&#xe60f;</i>
+                                            14
+                                        </span>
+                                    </div>
+                                    <div class="likes">
+                                        <span>
+                                            <i class="iconfont">&#xe630;</i>
+                                            43
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="same" style="opacity:1">
+                        <a href="javascript:;" class="same_top_a">
+                            <p class="top_kind">
+                                <span>
+                                    <i class="iconfont">&#xe61c;</i>
+                                </span>
+                                城市
+                            </p>
+                            <div class="same_top">
+                                <img src="http://img.qdaily.com/article/article_show/20180426104051K4V7aXRon5TMz2Em.jpg?imageMogr2/auto-orient/thumbnail/!245x185r/gravity/Center/crop/245x185/quality/85/format/jpg/ignore-error/1"
+                                    class="role_im"/>
+                            </div>
+                            <div class="same_middle">
+                                <p>今日娱乐：《冰与火之歌》今年没有第六卷，吉卜力乐园4年... </p>
+                            </div>
+                            <div class="same_bottom_div">
+                                <p>7小时前</p>
+                                <div class="big_manage">
+                                    <div class="comment">
+                                        <span>
+                                            <i class="iconfont">&#xe60f;</i>
+                                            14
+                                        </span>
+                                    </div>
+                                    <div class="likes">
+                                        <span>
+                                            <i class="iconfont">&#xe630;</i>
+                                            43
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="same" style="opacity:1">
+                        <a href="javascript:;" class="same_top_a">
+                            <p class="top_kind">
+                                <span>
+                                    <i class="iconfont">&#xe61c;</i>
+                                </span>
+                                城市
+                            </p>
+                            <div class="same_top">
+                                <img src="http://img.qdaily.com/article/article_show/20180426094018B6Rkq8wAo5GUCVJD.jpg?imageMogr2/auto-orient/thumbnail/!245x185r/gravity/Center/crop/245x185/quality/85/format/jpg/ignore-error/1"
+                                    class="role_im"/>
+                            </div>
+                            <div class="same_middle">
+                                <p>全球头条速递 | 《大西洋月刊》反思美国总统制；丹麦潜水艇... </p>
+                            </div>
+                            <div class="same_bottom_div">
+                                <p>7小时前</p>
+                                <div class="big_manage">
+                                    <div class="comment">
+                                        <span>
+                                            <i class="iconfont">&#xe60f;</i>
+                                            14
+                                        </span>
+                                    </div>
+                                    <div class="likes">
+                                        <span>
+                                            <i class="iconfont">&#xe630;</i>
+                                            43
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="totop">
+            <a href="javascript:;" id="to_top_a" title="回到顶部">
+                <img src="http://p5w1f51o8.bkt.clouddn.com/totop.png"/>
+            </a>
+        </div>
+        <div class="list">
+            <a href="javascript:;">
+                <img src="http://p5w1f51o8.bkt.clouddn.com/logo.png"/>
+                <i class="iconfont img_icon">&#xe628;</i>
+                <i class="iconfont img_icon1">&#xe666;</i>
+                <i class="iconfont img_icon2">&#xe665;</i>
+            </a>
+        </div>
+        <div class="same_bottom">
+            <div class="s_b_top">
+                <div class="many_ul">
+                    <ul>
+                        <li>
+                            <a href="index.html">
+                                首页
+                            </a>
+                        </li>
+                        <li>
+                            <a href="long_article.html" target="_blank">
+                                长文章
+                            </a>
+                        </li>
+                        <li>
+                            <a href="Top 15.html" target="_blank">
+                                TOP 15
+                            </a>
+                        </li>
+                        <li>
+                            <a href="picture.html" target="_blank">
+                                10 个图
+                            </a>
+                        </li>
+                        <li>
+                            <a href="research.html" target="_blank">
+                                好奇心研究所
+                            </a>
+                        </li>
+                        <li>
+                            <a href="column.html" target="_blank">
+                                100个有想法的人
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                Medium
+                            </a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="big_company.html" target="_blank">
+                                大公司头条
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                Q Business
+                            </a>
+                        </li>
+                        <li>
+                            <a href="column.html" target="_blank">
+                                今日应用
+                            </a>
+                        </li>
+                        <li>
+                            <a href="column.html" target="_blank">
+                                这世界
+                            </a>
+                        </li>
+                        <li>
+                            <a href="best_on_the_web.html" target="_blank">
+                                Best on the web
+                            </a>
+                        </li>
+                        <li>
+                            <a href="business.html" target="_blank">
+                                商业
+                            </a>
+                        </li>
+                        <li>
+                            <a href="magic.html" target="_blank">
+                                智能
+                            </a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="design.html" target="_blank">
+                                设计
+                            </a>
+                        </li>
+                        <li>
+                            <a href="fashion.html" target="_blank">
+                                时尚
+                            </a>
+                        </li>
+                        <li>
+                            <a href="happiness.html" target="_blank">
+                                娱乐
+                            </a>
+                        </li>
+                        <li>
+                            <a href="city.html" target="_blank">
+                                城市
+                            </a>
+                        </li>
+                        <li>
+                            <a href="game.html" target="_blank">
+                                游戏
+                            </a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="app.html" target="_blank">
+                                下载APP
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" class="login_img">
+                                登录 / 注册
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                订阅
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://weibo.com/qdaily" target="_blank">
+                                微博
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" class="show_a">
+                                微信
+                                <div class="wei_xin_bottom">
+                                    <div id="weixin_code"></div>
+                                    <p class="code_word">好奇心微信公众号</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="use_ agreement.html" target="_blank">
+                                用户协议
+                            </a>
+                        </li>
+                        <li>
+                            <a href="use_ agreement.html#privacy" target="_blank">
+                                隐私政策
+                            </a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="app.html" target="_blank">
+                                关于好奇心
+                            </a>
+                        </li>
+                        <li>
+                            <a href="app.html" target="_blank">
+                                联系我们
+                            </a>
+                        </li>
+                        <li>
+                            <a href="app.html" target="_blank">
+                                工作机会
+                            </a>
+                        </li>
+                        <li>
+                            <a href="use_ agreement.html#copyright" target="_blank">
+                                版权声明
+                            </a>
+                        </li>
+                    </ul>
+                    <form action="/searches" target="_blank" class="search_form">
+                        <input type="text"/>
+                        <span>
+                            <i class="iconfont">&#xe6fe;</i>
+                        </span>
+                    </form>
+                </div>
+            </div>
+            <div class="s_b_bottom">
+                <div class="power_right">
+                    <div class="right_img">
+                        <img src="http://p5w1f51o8.bkt.clouddn.com/logo.png"/>
+                    </div>
+                    <div class="right_word">
+                        <p>2014 北京酷睿奥思科技发展有限公司</p>
+                        <p>京ICP备14027177号-1</p>
+                        <span>
+                            <img src="http://p5w1f51o8.bkt.clouddn.com/Police.png"/>
+                        </span>
+                        <p>京公网安备 11010502030071号</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/same.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

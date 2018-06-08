@@ -1,0 +1,130 @@
+.main_container {
+    width: 100%;
+    padding-top: 90px;
+    padding-bottom: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.many_blocks {
+    width: 1010px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+    top: -10px;
+}
+
+.m_same_div {
+    width: 500px;
+    height: 280px;
+    margin-top: 10px;
+    position: relative;
+}
+
+.m_same_div a {
+    display: block;
+    overflow: hidden;
+}
+
+.m_same_div .span_img {
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+}
+
+.m_same_div span img {
+    height: 100%;
+}
+
+.m_same_div .main_c_pic {
+    display: block;
+    transition: all 1s;
+}
+
+.m_same_div a:hover .main_c_pic {
+    transform: scale(1.05);
+}
+
+.opacity_div {
+    width: 86px;
+    height: 106px;
+    background: rgba(0, 0, 0, .6);
+    position: absolute;
+    top: 0;
+    right: 20px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.opacity_div span {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 700;
+    color: #ffc81f;
+}
+
+.opacity_div span:nth-of-type(1) {
+    width: 70%;
+    height: 34px;
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.can_join {
+    position: absolute;
+    top: -3px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.title_description {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 170px;
+}
+
+.title_description::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, rgba(0, 0, 0, .6), transparent);
+}
+
+.title_main {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: calc(100% - 40px);
+    padding: 0 20px 12px 20px;
+}
+
+.title_description p {
+    color: #fff;
+}
+
+.title_description p:nth-of-type(1) {
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.title_description p:nth-of-type(2) {
+    margin-top: 8px;
+    font-size: 14px;
+    color: #d2d2d2;
+}
